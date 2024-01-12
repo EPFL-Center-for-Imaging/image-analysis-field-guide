@@ -31,5 +31,5 @@ sys.path.append(str(Path.cwd().parents[2]))
 
 from helpers import DATAFRAME_ONLINE_RESOURCES, show_online_resources
 
-show_online_resources(DATAFRAME_ONLINE_RESOURCES)
+show_online_resources(DATAFRAME_ONLINE_RESOURCES, dom='lfrtip')
 ```

@@ -24,7 +24,6 @@ show_online_resources = partial(
     style="width:100%;margin:auto",
     paging=False,
     showIndex=False,
-    dom="tr"
 )
 
 show_notebook_case_studies = partial(
@@ -88,7 +87,7 @@ def filter_software_tools(tags: List[str]):
     df = DATAFRAME_SOFTWARE_TOOLS.copy()
     mask = df['Used for'].str.contains('|'.join(tags), na=False)
     filtered_df = df[mask].copy()
-    filtered_df.drop(['Homepage', 'Used for'], axis='columns', inplace=True)
+    filtered_df.drop('Used for', axis='columns', inplace=True)
 
     return filtered_df
 

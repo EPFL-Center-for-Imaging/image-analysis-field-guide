@@ -35,7 +35,7 @@ from helpers import *
 init_notebook_mode(all_interactive=True, connected=True)
 
 df = filter_online_resources(tags)
-show_online_resources(df)
+show_online_resources(df, dom="tr")
 ```
 
 ## 💡 Notebook case studies
