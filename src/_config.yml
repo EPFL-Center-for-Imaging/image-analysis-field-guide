@@ -1,0 +1,53 @@
+# Book settings
+# Learn more at https://jupyterbook.org/customize/config.html
+
+title: The Image Analysis Field Guide
+author: EPFL Center for Imaging
+logo: "icon.png"
+copyright: "2024"
+only_build_toc_files: true
+
+launch_buttons:
+  notebook_interface : jupyterlab
+  jupyterhub_url: "http://frank1/"  # The URL for your JupyterHub.
+
+execute:
+  # execute_notebooks: "cache"
+  execute_notebooks: "auto"
+  # execute_notebooks: "off"
+  # exclude_patterns:
+  #   - '*.ipynb'
+
+# Define the name of the latex output file for PDF builds
+latex:
+  latex_documents:
+    targetname: napari_learning.tex
+
+# Add a bibtex file so that we can create citations
+bibtex_bibfiles:
+  - references.bib
+
+# Information about where the book exists on the web
+repository:
+  url: https://github.com/MalloryWittwer/image-analysis-field-guide/
+  branch: main
+  path_to_book: "src"
+
+# Add GitHub buttons to your book
+# See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
+html:
+  announcement: "🏗️ This site is under construction!"
+  favicon: "logo.ico"
+  use_issues_button: false
+  use_repository_button: true
+  comments:
+    hypothesis: true
+
+sphinx:
+  config:
+    html_show_copyright: false
+  
+parse:
+  myst_enable_extensions:
+    - linkify
+    - html_admonition
