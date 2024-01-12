@@ -1,9 +1,11 @@
 ![EPFL Center for Imaging logo](https://imaging.epfl.ch/resources/logo-for-gitlab.svg)
 # The Image Analysis Field Guide
 
-A [Jupyter Book] website 
+Essential toolkit to get started in scientific image analysis.
 
-👉 See the live website at [this URL](https://EPFL-Center-for-Imaging.github.io/image-analysis-field-guide/).
+👉 See the live website at [this URL](https://epfl-center-for-imaging.github.io/image-analysis-field-guide/).
+
+-------------------------
 
 ## Installation
 

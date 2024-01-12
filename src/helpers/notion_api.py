@@ -14,18 +14,47 @@ def get_online_resources_dataframe() -> pd.DataFrame:
     online_resources_data = query_notion_database(ONLINE_RESOURCES_DATABASE_ID)
     items = parse_online_resources(online_resources_data)
     df = pd.DataFrame(items)
+
+    df["Name"] = [
+        '<a href="{}">{}</a>'.format(link, name)
+        for link, name in zip(df["Link"], df["Name"])
+    ]
+
+    df.drop('Link', axis='columns', inplace=True)
+
+    df["Keywords"] = [
+        ''.join(['<button class="btn btn-light btn-xs" onclick="insertText(this)" style="padding: 1px; margin: 4px 2px; font-size: 12px;">{}</button>'.format(keyword) for keyword in [kw for kw in str(keywords).split(', ') if kw != 'nan']])
+        for keywords in df["Keywords"]
+    ]
+
     return df
 
 def get_software_tools_dataframe() -> pd.DataFrame:
     software_tools_data = query_notion_database(SOFTWARE_TOOLS_DATABASE_ID)
     items = parse_software_tools(software_tools_data)
     df = pd.DataFrame(items)
+
+    df["Software tool"] = [
+        '<a href="{}">{}</a>'.format(link, name)
+        for link, name in zip(df["Homepage"], df["Software tool"])
+    ]
+
+    df.drop(['Homepage'], axis='columns', inplace=True)
+
+    df["Used for"] = [
+        ''.join(['<button class="btn btn-light btn-xs" onclick="insertText(this)" style="padding: 1px; margin: 4px 2px; font-size: 12px;">{}</button>'.format(keyword) for keyword in [kw for kw in str(keywords).split(', ') if kw != 'nan']])
+        for keywords in df["Used for"]
+    ]
+
+    df["Keywords"] = [
+        ''.join(['<button class="btn btn-light btn-xs" onclick="insertText(this)" style="padding: 1px; margin: 4px 2px; font-size: 12px;">{}</button>'.format(keyword) for keyword in [kw for kw in str(keywords).split(', ') if kw != 'nan']])
+        for keywords in df["Keywords"]
+    ]
+
     return df
 
 def parse_online_resources(data: dict) -> List[dict]:
-    """
-    Extract useful data from the raw Notion database contents.
-    """
+    """Extract data from the raw Notion database contents."""
     items = []
 
     for page_contents in data.get('results'):
@@ -44,7 +73,7 @@ def parse_online_resources(data: dict) -> List[dict]:
 
 def parse_software_tools(data: dict) -> List[dict]:
     """
-    Extract useful data from the raw Notion database contents.
+    Extract data from the raw Notion database contents.
     """
     items = []
 

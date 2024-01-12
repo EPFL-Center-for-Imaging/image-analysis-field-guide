@@ -51,7 +51,7 @@ def get_notebook_case_studies_dataframe():
     """
     basedir = str(Path(__file__).parents[1] / 'sections')
     notebooks = glob.glob(f"{basedir}/**/*.ipynb", recursive=True)
-    # print(f"Found {len(notebooks)} notebooks to parse.")
+
     items = []
     for ipath in notebooks:
         ntbk = nbf.read(ipath, nbf.NO_CONVERT)
@@ -62,6 +62,8 @@ def get_notebook_case_studies_dataframe():
         items.append(parsed_info)
 
     df = pd.DataFrame(items)
+
+
     
     return df
 

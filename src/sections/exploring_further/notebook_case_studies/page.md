@@ -14,21 +14,28 @@ kernelspec:
 
 Browse our collection of Jupyter notebooks to learn more about scientific image processing and analysis in Python.
 
+````{admonition} Launch the notebooks
+Launch the notebooks to run them interactively on our `Jupyter Hub` by clicking on the rocket icon (🚀) at the top of this page (only EPFL).
+```{image} ../../../images/jupyterhub.png
+:align: center
+```
+````
+
 ```{code-cell} ipython3
 :tags: [remove-input]
 
-import pandas as pd
 from itables import init_notebook_mode
-from itables import show
-from pathlib import Path
 
 init_notebook_mode(all_interactive=True, connected=True)
 
 import sys
+from pathlib import Path
+
 sys.path.append(str(Path.cwd().parents[2]))
-from helpers import DATAFRAME_NOTEBOOK_CASE_STUDIES
+
+from helpers import DATAFRAME_NOTEBOOK_CASE_STUDIES, show_notebook_case_studies
+
 df = DATAFRAME_NOTEBOOK_CASE_STUDIES.copy()
-# df = pd.read_csv(Path.cwd().parents[3] / 'db' / 'notebook_case_studies.csv')
 
 df["Title"] = [
     '<a href="./notebooks/{}">{}</a>'.format(link, name)
@@ -40,15 +47,7 @@ df["Image"] = [
     for image in df["Image"]
 ]
 
-df.drop(['Link', 'Keywords'], axis='columns', inplace=True)
+df.drop(['Link', 'Keywords', 'Description'], axis='columns', inplace=True)
 
-show(
-    df,
-    classes="display compact", 
-    columnDefs=[
-        {"className": "dt-left", "targets": [0, 1]}
-    ],
-    paging=False,
-    showIndex=False,
-)
+show_notebook_case_studies(df)
 ```

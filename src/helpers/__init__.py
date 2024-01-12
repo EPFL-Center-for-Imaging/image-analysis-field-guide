@@ -53,17 +53,9 @@ show_software_tools = partial(
 
 def filter_online_resources(tags: List[str]):
     df = DATAFRAME_ONLINE_RESOURCES.copy()
-
-    df["Name"] = [
-        '<a href="{}">{}</a>'.format(link, name)
-        for link, name in zip(df["Link"], df["Name"])
-    ]
-
     mask = df['Keywords'].str.contains('|'.join(tags), na=False)
     filtered_df = df[mask].copy()
-
-
-    filtered_df.drop(['Link', 'Keywords'], axis='columns', inplace=True)
+    filtered_df.drop('Keywords', axis='columns', inplace=True)
 
     return filtered_df
 
@@ -94,20 +86,8 @@ def filter_notebook_case_studies(tags: List[str]):
 
 def filter_software_tools(tags: List[str]):
     df = DATAFRAME_SOFTWARE_TOOLS.copy()
-
-    df["Software tool"] = [
-        '<a href="{}">{}</a>'.format(link, name)
-        for link, name in zip(df["Homepage"], df["Software tool"])
-    ]
-
-    df["Keywords"] = [
-        ''.join(['<button class="btn btn-light btn-xs" onclick="insertText(this)" style="padding: 1px; margin: 4px 2px; font-size: 12px;">{}</button>'.format(keyword) for keyword in [kw for kw in str(keywords).split(', ') if kw != 'nan']])
-        for keywords in df["Keywords"]
-    ]
-
     mask = df['Used for'].str.contains('|'.join(tags), na=False)
     filtered_df = df[mask].copy()
-
     filtered_df.drop(['Homepage', 'Used for'], axis='columns', inplace=True)
 
     return filtered_df

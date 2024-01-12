@@ -12,6 +12,7 @@ New to image analysis? These short guides will help you start off on the right f
 
 - [🐍 Setting up Python for scientific image analysis](./sections/getting_started/pages/python_setup.md)
 - [🚩 Starting a new image analysis project](./sections/getting_started/pages/new_project.md)
+- More to come!
 
 ## 🚀 Starter packs
 
@@ -63,6 +64,8 @@ Performance optimization
 ```
 ````
 
+Want to add a Starter Pack? See [Contribute](#🤝-contribute).
+
 ## 📚 Exploring further
 
 Browse our collections of online resources, python examples, and software tools related to image analysis.
@@ -81,9 +84,7 @@ Browse our collections of online resources, python examples, and software tools 
 
 ## 🤝 Contribute
 
-Please check out our [Contributor's guide](https://github.com/MalloryWittwer/image-analysis-field-guide/blob/main/contribute.md) to learn more about the many ways to contribute to our project.
-
-We’d be happy to receive your suggestions and to know more about the topics you are interested in!
+Please check out our [Contributor's guide](https://github.com/MalloryWittwer/image-analysis-field-guide/blob/main/contribute.md) to learn more about the ways to contribute to our project.
 
 ## 🖋️ Feedback
 
