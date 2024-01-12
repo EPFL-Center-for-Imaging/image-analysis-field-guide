@@ -1,0 +1,11 @@
+authors:
+  - family-names: Wittwer
+    given-names: Mallory
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata from this file."
+title: "The Image Analysis Field Guide"
+repository-code: "https://github.com/EPFL-Center-for-Imaging/image-analysis-field-guide"
+date-released: "2024-01-12"
+keywords:
+  - "image analysis"
+license: BSD-3-Clause
