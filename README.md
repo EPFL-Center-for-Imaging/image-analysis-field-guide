@@ -3,7 +3,7 @@
 
 A [Jupyter Book] website 
 
-👉 See the live website at [this URL]().
+👉 See the live website at [this URL](https://EPFL-Center-for-Imaging.github.io/image-analysis-field-guide/).
 
 ## Installation
 
