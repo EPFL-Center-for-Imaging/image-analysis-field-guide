@@ -63,3 +63,11 @@ launch_buttons:
   notebook_interface : jupyterlab
   jupyterhub_url: "http://frank1/"  # The URL for your JupyterHub.
 ```
+
+## Contribute
+
+See [contribute](./contribute.md).
+
+## Roadmap
+
+See [roadmap](./roadmap.md).
