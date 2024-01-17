@@ -84,7 +84,7 @@ Browse our collections of online resources, python examples, and software tools 
 
 ## 🤝 Contribute
 
-Please check out our [Contributor's guide](https://github.com/MalloryWittwer/image-analysis-field-guide/blob/main/contribute.md) to learn more about the ways to contribute to our project.
+Please check out our [Contributor's guide](https://github.com/EPFL-Center-for-Imaging/image-analysis-field-guide/blob/main/contribute.md) to learn more about the ways to contribute to our project.
 
 ## 🖋️ Feedback
 
