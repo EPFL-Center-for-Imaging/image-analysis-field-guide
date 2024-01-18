@@ -18,6 +18,8 @@ RUN pip3 install -r requirements.txt
 
 COPY ./src/ ./src/
 
+ARG NOTION_KEY
+
 RUN jupyter-book build ./src
 
 RUN cp -r ./src/_build/html /usr/share/nginx/

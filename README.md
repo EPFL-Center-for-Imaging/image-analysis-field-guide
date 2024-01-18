@@ -32,7 +32,7 @@ jb build src --builder linkcheck
 Build the image:
 
 ```
-docker build -t $(whoami)/$(basename ${PWD}) .
+docker build --build-arg NOTION_KEY=$NOTION_KEY -t $(whoami)/$(basename ${PWD}) .
 ```
 
 Run the jupyter book in a container on `http://localhost:8080/`.
