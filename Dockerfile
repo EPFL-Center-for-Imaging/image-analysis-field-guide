@@ -6,7 +6,8 @@ RUN apt-get update && apt-get install -y \
     software-properties-common \
     nginx \
     python3.9 \
-    python3-pip
+    python3-pip \
+    python3-sphinx
 
 RUN rm -rf /usr/share/nginx/html/*
 
