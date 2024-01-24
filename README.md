@@ -5,6 +5,10 @@ Essential toolkit to get started in scientific image analysis.
 
 👉 See the live website at [this URL](https://epfl-center-for-imaging.github.io/image-analysis-field-guide/).
 
+**Help us improve the site**
+
+✒️ We're running a [survey](https://docs.google.com/forms/d/e/1FAIpQLScl3ho-P_F_vO-wSG1CLJCkxEipImF0cQuY_l_o12CRWbKp0Q/viewform?usp=sf_link) to find out how we can improve the site. Don't hesitate to respond!
+
 -------------------------
 
 ## Installation
