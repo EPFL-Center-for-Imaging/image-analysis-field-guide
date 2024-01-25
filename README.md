@@ -3,7 +3,7 @@
 
 Essential toolkit to get started in scientific image analysis.
 
-👉 See the live website at [this URL](https://epfl-center-for-imaging.github.io/image-analysis-field-guide/).
+<!-- 👉 See the live website at [this URL](https://epfl-center-for-imaging.github.io/image-analysis-field-guide/). -->
 
 **Help us improve the site**
 
