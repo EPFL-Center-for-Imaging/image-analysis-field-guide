@@ -54,7 +54,7 @@ def filter_online_resources(tags: List[str]):
     df = DATAFRAME_ONLINE_RESOURCES.copy()
     mask = df['Keywords'].str.contains('|'.join(tags), na=False)
     filtered_df = df[mask].copy()
-    filtered_df.drop('Keywords', axis='columns', inplace=True)
+    filtered_df.drop(['Keywords', 'Favourite'], axis='columns', inplace=True)
 
     return filtered_df
 
@@ -67,7 +67,7 @@ def filter_notebook_case_studies(tags: List[str]):
     df = DATAFRAME_NOTEBOOK_CASE_STUDIES.copy()
 
     df["Title"] = [
-        '<a href="../../../exploring_further/notebook_case_studies/notebooks/{}#{}">{}</a>'.format(link, minimize(tags[0]), name)
+        '<a href="{}#{}">{}</a>'.format(str(link).replace('/src/', '/src/_build/html/'), minimize(tags[0]), name)
         for link, name in zip(df["Link"], df["Title"])
     ]
 
@@ -78,7 +78,7 @@ def filter_notebook_case_studies(tags: List[str]):
 
     mask = df['Keywords'].str.contains('|'.join(tags), na=False)
     df = df[mask].copy()
-    df.drop(['Link', 'Keywords', 'Description'], axis='columns', inplace=True)
+    df.drop(['Link', 'Description'], axis='columns', inplace=True)
 
     return df
 
@@ -87,7 +87,7 @@ def filter_software_tools(tags: List[str]):
     df = DATAFRAME_SOFTWARE_TOOLS.copy()
     mask = df['Used for'].str.contains('|'.join(tags), na=False)
     filtered_df = df[mask].copy()
-    filtered_df.drop('Used for', axis='columns', inplace=True)
+    filtered_df.drop(['Used for', 'Keywords', 'Favourite'], axis='columns', inplace=True)
 
     return filtered_df
 

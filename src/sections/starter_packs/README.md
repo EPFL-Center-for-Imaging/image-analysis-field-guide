@@ -1,4 +1,4 @@
-# 🚀 Starter packs
+# 🚀 Topical packs
 
 We’ve curated resources and grouped them by topic.
 

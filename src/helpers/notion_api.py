@@ -59,14 +59,22 @@ def parse_online_resources(data: dict) -> List[dict]:
 
     for page_contents in data.get('results'):
         page_title = page_contents['properties']['Name']['title'][0]['plain_text']
-        page_url = page_contents['properties']['Name']['title'][0]['href']
+        page_url = page_contents['properties']['Link']['url']
         all_keywords = [keyword['name'] for keyword in page_contents['properties']['Keywords']['multi_select']]
         all_keywords = ', '.join(all_keywords)
+
+        # Only keep the data for the field guide
+        field_guide_include = page_contents['properties']['Field guide']['checkbox']
+        if not field_guide_include:
+            continue
+
+        is_favourite = page_contents['properties']['Favourite']['checkbox']
 
         items.append({
             'Name': page_title,
             'Link': page_url,
-            'Keywords': all_keywords
+            'Keywords': all_keywords,
+            'Favourite': is_favourite
         })
 
     return items
@@ -86,12 +94,20 @@ def parse_software_tools(data: dict) -> List[dict]:
         all_page_keywords = [keywords['name'] for keywords in page_contents['properties']['Keywords']['multi_select']]
         all_page_keywords = ', '.join(all_page_keywords)
         
+        # Only keep the data for the field guide
+        field_guide_include = page_contents['properties']['Field guide']['checkbox']
+        if not field_guide_include:
+            continue
+
+        is_favourite = page_contents['properties']['Favourite']['checkbox']
+
         items.append({
             "Software tool": page_name,
             "Description": page_description,
             "Homepage": page_url,
             "Used for": all_page_usage,
             "Keywords": all_page_keywords,
+            "Favourite": is_favourite
         })
 
     return items
@@ -117,7 +133,7 @@ def query_notion_database(database_id: str) -> dict:
 
 
 if __name__ == "__main__":
-    # df_online_resources = get_online_resources_dataframe()
+    df_online_resources = get_online_resources_dataframe()
     # print(df_online_resources.head())
     # print(len(df_online_resources))
 

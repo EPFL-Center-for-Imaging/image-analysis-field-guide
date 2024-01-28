@@ -8,7 +8,13 @@ chapters:
   sections:
   # - file: sections/getting_started/pages/recipe_success
   - file: sections/getting_started/pages/python_setup
-  - file: sections/getting_started/pages/new_project
+  # - file: sections/getting_started/pages/new_project
+  - file: sections/starter_packs/packs/image-denoising/start_here.ipynb
+  - file: sections/starter_packs/packs/image-segmentation/start_here.ipynb
+  - file: sections/starter_packs/packs/image-registration/start_here.ipynb
+  - file: sections/starter_packs/packs/detection-and-tracking/start_here.ipynb
+  - file: sections/starter_packs/packs/image-data-visualization/start_here.ipynb
+  - file: sections/starter_packs/packs/performance-optimization/start_here.ipynb
 - file: sections/starter_packs/README
   sections:
   - file: sections/starter_packs/packs/image-denoising/page

@@ -21,7 +21,7 @@ Once an image analysis pipeline is working, it may be time to think about  makin
 tags = ["Optimization"]
 ```
 
-## 🌐 Online resources
+## 🎓 Learning resources
 
 ```{code-cell} ipython3
 :tags: [remove-input]
@@ -38,13 +38,32 @@ df = filter_online_resources(tags)
 show_online_resources(df, dom="tr")
 ```
 
-## 💡 Notebook case studies
+## 💡 Jupyter notebooks
+
+### Tutorials
 
 ```{code-cell} ipython3
 :tags: [remove-input]
 
 df = filter_notebook_case_studies(tags)
-show_notebook_case_studies(df)
+
+df_tutorials = df[df['Keywords'].str.contains('Tutorial')].copy()
+df_tutorials.drop('Keywords', axis='columns', inplace=True)
+
+show_notebook_case_studies(df_tutorials)
+```
+
+### Case studies from EPFL
+
+```{code-cell} ipython3
+:tags: [remove-input]
+
+df = filter_notebook_case_studies(tags)
+
+df_case_studies = df[~(df['Keywords'].str.contains('Tutorial'))].copy()
+df_case_studies.drop('Keywords', axis='columns', inplace=True)
+
+show_notebook_case_studies(df_case_studies)
 ```
 
 ## 🛠️ Software tools

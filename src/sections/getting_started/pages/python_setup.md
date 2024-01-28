@@ -135,7 +135,7 @@ Type `jupyter lab` in your terminal. This should start the Jupyter lab applicati
 ```
 ````
 
-One of the main features of Jupyter Lab is to enable viewing and editing `Jupyter notebooks`, which are interactive documents that combine code, visualizations, and narrative text, and are used by scientists to experiment with code and and demosntrate workflows. To have a better idea of what this looks like, you can have a look at our [Notebook case studies](../../exploring_further/notebook_case_studies/page.md) page.
+One of the main features of Jupyter Lab is to enable viewing and editing `Jupyter notebooks`, which are interactive documents that combine code, visualizations, and narrative text, and are used by scientists to experiment with code and and demosntrate workflows. To have a better idea of what this looks like, you can have a look at our [Jupyter notebooks](../../exploring_further/notebook_case_studies/page.md) page.
 
 ## Install Napari
 

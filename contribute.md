@@ -25,8 +25,8 @@ For all of those, please file-in an issue on GitHub or make a Pull Request.
 
 We are open to hearing your suggestions regarding
 
-- adding new `Notebook case studies`
+- adding new `Jupyter notebooks`
 - adding new `Getting started` guides
-- adding new `Starter packs`
+- adding new `Topical packs`
 
 For all of those, please send an email to imaging@epfl.ch to get in touch with us.

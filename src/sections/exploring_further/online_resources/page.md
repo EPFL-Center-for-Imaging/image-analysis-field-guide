@@ -10,13 +10,15 @@ kernelspec:
   language: python
   name: python3
 ---
-# 🌐 Online resources
+# 🎓 Learning resources
 
 Browse our curated list of online resources on the topic of scientific image analysis.
 
 ```{admonition} Contribute
 Do you want to add a resource to our list? Fill-in our [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSeJojbinWxZz9js-XBPnWCxLdyfQcS0CUhe437fLCIrNvDBZw/viewform?usp=sf_link) and we'll be happy to review your suggestion.
 ```
+
+## ⭐ Favourites
 
 ```{code-cell} ipython3
 :tags: [remove-input]
@@ -31,5 +33,19 @@ sys.path.append(str(Path.cwd().parents[2]))
 
 from helpers import DATAFRAME_ONLINE_RESOURCES, show_online_resources
 
-show_online_resources(DATAFRAME_ONLINE_RESOURCES, dom='lfrtip')
+df_favourites = DATAFRAME_ONLINE_RESOURCES[DATAFRAME_ONLINE_RESOURCES['Favourite']].copy()
+df_favourites.drop(['Favourite'], axis='columns', inplace=True)
+
+show_online_resources(df_favourites, dom='lfrtip')
+```
+
+## ⬇ More resources
+
+```{code-cell} ipython3
+:tags: [remove-input]
+
+df_non_favourites = DATAFRAME_ONLINE_RESOURCES[~(DATAFRAME_ONLINE_RESOURCES['Favourite'])].copy()
+df_non_favourites.drop(['Favourite'], axis='columns', inplace=True)
+
+show_online_resources(df_non_favourites, dom='lfrtip')
 ```

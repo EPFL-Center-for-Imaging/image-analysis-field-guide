@@ -10,7 +10,7 @@ kernelspec:
   language: python
   name: python3
 ---
-# 💡 Notebook case studies
+# 💡 Jupyter notebooks
 
 Browse our collection of Jupyter notebooks to learn more about scientific image processing and analysis in Python.
 
@@ -20,6 +20,8 @@ Launch the notebooks to run them interactively on our `Jupyter Hub` by clicking 
 :align: center
 ```
 ````
+
+## Tutorials
 
 ```{code-cell} ipython3
 :tags: [remove-input]
@@ -37,17 +39,38 @@ from helpers import DATAFRAME_NOTEBOOK_CASE_STUDIES, show_notebook_case_studies
 
 df = DATAFRAME_NOTEBOOK_CASE_STUDIES.copy()
 
-df["Title"] = [
-    '<a href="./notebooks/{}">{}</a>'.format(link, name)
-    for link, name in zip(df["Link"], df["Title"])
-]
-
 df["Image"] = [
     '<img src="../../../_images/{}" alt="Image" width="500">'.format(image)
     for image in df["Image"]
 ]
 
-df.drop(['Link', 'Keywords', 'Description'], axis='columns', inplace=True)
+df["Title"] = [
+    '<a href="{}">{}</a>'.format(str(link).replace('/src/', '/src/_build/html/'), name)
+    for link, name in zip(df["Link"], df["Title"])
+]
 
-show_notebook_case_studies(df)
+# Create the tutorials table
+df_tutorials = df[df['Keywords'].str.contains('Tutorial')].copy()
+
+df_tutorials.drop(['Link', 'Description', 'Keywords'], axis='columns', inplace=True)
+
+show_notebook_case_studies(df_tutorials)
+```
+
+## Case studies from EPFL
+
+```{code-cell} ipython3
+:tags: [remove-input]
+
+# Create the case studies table
+df_case_studies = df[~(df['Keywords'].str.contains('Tutorial'))].copy()
+
+df_case_studies["Title"] = [
+    '<a href="{}">{}</a>'.format(str(link).replace('/src/', '/src/_build/html/'), name)
+    for link, name in zip(df_case_studies["Link"], df_case_studies["Title"])
+]
+
+df_case_studies.drop(['Link', 'Description', 'Keywords'], axis='columns', inplace=True)
+
+show_notebook_case_studies(df_case_studies)
 ```

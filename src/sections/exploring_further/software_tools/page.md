@@ -18,6 +18,8 @@ Browse our curated list of software tools on the topic of scientific image analy
 Do you want to add a software tool to our list? Fill-in our [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSe4QDF4oGKojaLksrsizHotXpAOGbL4f1bQwyBoNlOztMPzGA/viewform?usp=sf_link) and we'll be happy to review your suggestion.
 ```
 
+## ⭐ Favourites
+
 ```{code-cell} ipython3
 :tags: [remove-input]
 
@@ -32,5 +34,19 @@ sys.path.append(str(Path.cwd().parents[2]))
 
 from helpers import DATAFRAME_SOFTWARE_TOOLS, show_software_tools
 
-show_software_tools(DATAFRAME_SOFTWARE_TOOLS)
+df_favourites = DATAFRAME_SOFTWARE_TOOLS[DATAFRAME_SOFTWARE_TOOLS['Favourite']].copy()
+df_favourites.drop(['Favourite'], axis='columns', inplace=True)
+
+show_software_tools(df_favourites)
+```
+
+## ⬇ More tools
+
+```{code-cell} ipython3
+:tags: [remove-input]
+
+df_non_favourites = DATAFRAME_SOFTWARE_TOOLS[~(DATAFRAME_SOFTWARE_TOOLS['Favourite'])].copy()
+df_non_favourites.drop(['Favourite'], axis='columns', inplace=True)
+
+show_software_tools(df_non_favourites)
 ```
