@@ -29,7 +29,7 @@ bibtex_bibfiles:
 
 # Information about where the book exists on the web
 repository:
-  url: https://github.com/MalloryWittwer/image-analysis-field-guide/
+  url: https://github.com/EPFL-Center-for-Imaging/image-analysis-field-guide/
   branch: main
   path_to_book: "src"
 
