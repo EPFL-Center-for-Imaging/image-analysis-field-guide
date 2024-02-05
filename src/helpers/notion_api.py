@@ -23,7 +23,7 @@ def get_online_resources_dataframe() -> pd.DataFrame:
     df.drop('Link', axis='columns', inplace=True)
 
     df["Keywords"] = [
-        ''.join(['<button class="btn btn-light btn-xs" onclick="insertText(this)" style="padding: 1px; margin: 4px 2px; font-size: 12px;">{}</button>'.format(keyword) for keyword in [kw for kw in str(keywords).split(', ') if kw != 'nan']])
+        ''.join(['<button class="btn btn-light btn-xs" onclick="function()" style="padding: 1px; margin: 4px 2px; font-size: 12px;">{}</button>'.format(keyword) for keyword in [kw for kw in str(keywords).split(', ') if kw != 'nan']])
         for keywords in df["Keywords"]
     ]
 
@@ -42,12 +42,12 @@ def get_software_tools_dataframe() -> pd.DataFrame:
     df.drop(['Homepage'], axis='columns', inplace=True)
 
     df["Used for"] = [
-        ''.join(['<button class="btn btn-light btn-xs" onclick="insertText(this)" style="padding: 1px; margin: 4px 2px; font-size: 12px;">{}</button>'.format(keyword) for keyword in [kw for kw in str(keywords).split(', ') if kw != 'nan']])
+        ''.join(['<button class="btn btn-light btn-xs" onclick="function()" style="padding: 1px; margin: 4px 2px; font-size: 12px;">{}</button>'.format(keyword) for keyword in [kw for kw in str(keywords).split(', ') if kw != 'nan']])
         for keywords in df["Used for"]
     ]
 
     df["Keywords"] = [
-        ''.join(['<button class="btn btn-light btn-xs" onclick="insertText(this)" style="padding: 1px; margin: 4px 2px; font-size: 12px;">{}</button>'.format(keyword) for keyword in [kw for kw in str(keywords).split(', ') if kw != 'nan']])
+        ''.join(['<button class="btn btn-light btn-xs" onclick="function()" style="padding: 1px; margin: 4px 2px; font-size: 12px;">{}</button>'.format(keyword) for keyword in [kw for kw in str(keywords).split(', ') if kw != 'nan']])
         for keywords in df["Keywords"]
     ]
 

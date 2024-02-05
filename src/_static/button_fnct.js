@@ -1,6 +1,5 @@
-function insertText(button) {
+function insertText(button, inputElement) {
     var buttonText = button.textContent;
-    var inputElement = document.querySelector('.dataTables_wrapper .dataTables_filter input');
 
     if (button.classList.contains('btn-light')) {
         // Append the button text to the input
