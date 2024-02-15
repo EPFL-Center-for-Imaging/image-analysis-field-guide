@@ -130,7 +130,9 @@ Useful information to include in the `README` include:
 - A description of your project's structure
 - How to cite your project
 
-For more information, see [Landing Page - README File (The Turing Way)](https://the-turing-way.netlify.app/project-design/project-repo/project-repo-readme).
+To learn more:
+- [makeareadme.com](https://www.makeareadme.com/)
+- [Landing Page - README File (The Turing Way)](https://the-turing-way.netlify.app/project-design/project-repo/project-repo-readme)
 
 ## Add a `requirements.txt` file
 

@@ -70,7 +70,7 @@ launch_buttons:
 
 ## Contribute
 
-See [contribute](./contribute.md).
+See [contribute](./CONTRIBUTING.md).
 
 ## Roadmap
 

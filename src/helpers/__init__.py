@@ -63,11 +63,16 @@ def minimize(input_string: str):
     return '-'.join(input_string.lower().split())
 
 
+def process_link(link):
+    processed_link = str(link).replace('/src/', '/src/_build/html/')
+    processed_link = processed_link.replace('/opt/src/_build/html', '')  # for docker (quick hack)
+    return processed_link
+
 def filter_notebook_case_studies(tags: List[str]):
     df = DATAFRAME_NOTEBOOK_CASE_STUDIES.copy()
 
     df["Title"] = [
-        '<a href="{}#{}">{}</a>'.format(str(link).replace('/src/', '/src/_build/html/'), minimize(tags[0]), name)
+        '<a href="{}#{}">{}</a>'.format(process_link(link), minimize(tags[0]), name)
         for link, name in zip(df["Link"], df["Title"])
     ]
 

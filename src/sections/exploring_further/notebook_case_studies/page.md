@@ -15,7 +15,7 @@ kernelspec:
 Browse our collection of Jupyter notebooks to learn more about scientific image processing and analysis in Python.
 
 ````{admonition} Launch the notebooks
-Launch the notebooks to run them interactively on our `Jupyter Hub` by clicking on the rocket icon (🚀) at the top of this page (only EPFL).
+If you are in EPFL, you can launch the notebooks to run them interactively on our `Jupyter Hub` by clicking on the rocket icon (🚀) at the top of this page.
 ```{image} ../../../images/jupyterhub.png
 :align: center
 ```

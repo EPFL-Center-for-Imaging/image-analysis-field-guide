@@ -167,3 +167,4 @@ experiments/
 raw/
 lab/
 src/sections/exploring_further/notebook_case_studies/data/
+**/data/**

@@ -12,7 +12,7 @@ kernelspec:
 ---
 ![tracking](../../../../images/tracking_lg.png)
 
-# 🐾 Detection and tracking
+# 🐾 Object detection and tracking
 
 Objects of interest can be detected via keypoints, bounding boxes, shapes (e.g. lines, circles), or segmentation masks. In timeseries (movies), following objects across frames is known as tracking.
 

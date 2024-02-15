@@ -12,7 +12,7 @@ kernelspec:
 ---
 # 🎓 Learning resources
 
-Browse our curated list of online resources on the topic of scientific image analysis.
+Browse our curated list of free online resources on the topic of scientific image analysis.
 
 ```{admonition} Contribute
 Do you want to add a resource to our list? Fill-in our [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSeJojbinWxZz9js-XBPnWCxLdyfQcS0CUhe437fLCIrNvDBZw/viewform?usp=sf_link) and we'll be happy to review your suggestion.

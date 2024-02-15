@@ -9,7 +9,7 @@ only_build_toc_files: true
 
 launch_buttons:
   notebook_interface : jupyterlab
-  jupyterhub_url: "http://frank1/"  # The URL for your JupyterHub.
+  jupyterhub_url: "http://frank3:8000/"  # The URL for your JupyterHub.
 
 execute:
   # execute_notebooks: "cache"
@@ -36,7 +36,7 @@ repository:
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
 html:
-  announcement: "🏗️ [Jan 2024] This site is under construction! Feel free to give us your feedback by filling in our <a href='https://docs.google.com/forms/d/e/1FAIpQLScl3ho-P_F_vO-wSG1CLJCkxEipImF0cQuY_l_o12CRWbKp0Q/viewform?usp=sf_link'>survey form</a>. Thank you!"
+  announcement: "🏗️ [Jan 2024] This site is under construction! Please give us your feedback by filling in our <a href='https://docs.google.com/forms/d/e/1FAIpQLScl3ho-P_F_vO-wSG1CLJCkxEipImF0cQuY_l_o12CRWbKp0Q/viewform?usp=sf_link'>survey form</a>. Thank you!"
   favicon: "logo.ico"
   use_issues_button: false
   use_repository_button: true

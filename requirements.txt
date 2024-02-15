@@ -10,5 +10,6 @@ napari-skimage-regionprops
 skan
 trackpy
 seaborn
-spam
+# spam
 python-dotenv
+PyWavelets

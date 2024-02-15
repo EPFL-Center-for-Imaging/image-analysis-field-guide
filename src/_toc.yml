@@ -8,18 +8,19 @@ chapters:
   sections:
   # - file: sections/getting_started/pages/recipe_success
   - file: sections/getting_started/pages/python_setup
+  - file: sections/getting_started/pages/image_manipulation
   # - file: sections/getting_started/pages/new_project
-  - file: sections/starter_packs/packs/image-denoising/start_here.ipynb
   - file: sections/starter_packs/packs/image-segmentation/start_here.ipynb
   - file: sections/starter_packs/packs/image-registration/start_here.ipynb
+  - file: sections/starter_packs/packs/image-denoising/start_here.ipynb
   - file: sections/starter_packs/packs/detection-and-tracking/start_here.ipynb
   - file: sections/starter_packs/packs/image-data-visualization/start_here.ipynb
-  - file: sections/starter_packs/packs/performance-optimization/start_here.ipynb
+  - file: sections/getting_started/pages/next_steps
 - file: sections/starter_packs/README
   sections:
-  - file: sections/starter_packs/packs/image-denoising/page
   - file: sections/starter_packs/packs/image-segmentation/page
   - file: sections/starter_packs/packs/image-registration/page
+  - file: sections/starter_packs/packs/image-denoising/page
   - file: sections/starter_packs/packs/detection-and-tracking/page
   - file: sections/starter_packs/packs/image-data-visualization/page
   - file: sections/starter_packs/packs/performance-optimization/page
@@ -27,12 +28,4 @@ chapters:
   sections:
   - file: sections/exploring_further/online_resources/page
   - file: sections/exploring_further/notebook_case_studies/page
-    sections:
-    - file: sections/exploring_further/notebook_case_studies/notebooks/segmentation_3d.ipynb
-    - file: sections/exploring_further/notebook_case_studies/notebooks/tracking_2d.ipynb
-    - file: sections/exploring_further/notebook_case_studies/notebooks/nuclei_stardist.ipynb
-    - file: sections/exploring_further/notebook_case_studies/notebooks/lungs_segmentation_ct.ipynb
-    - file: sections/exploring_further/notebook_case_studies/notebooks/skeletonization.ipynb
-    - file: sections/exploring_further/notebook_case_studies/notebooks/image_correlation.ipynb
-    - file: sections/exploring_further/notebook_case_studies/notebooks/crystallites_annotation.ipynb
   - file: sections/exploring_further/software_tools/page
