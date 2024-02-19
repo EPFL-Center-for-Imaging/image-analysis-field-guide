@@ -1,0 +1,12 @@
+napari[all]
+matplotlib
+stardist-napari
+napari-skimage-regionprops
+skan
+trackpy
+seaborn
+spam
+PyWavelets
+dask-image
+imagecodecs
+graphviz

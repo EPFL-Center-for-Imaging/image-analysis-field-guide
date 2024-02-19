@@ -35,7 +35,7 @@ from pathlib import Path
 
 sys.path.append(str(Path.cwd().parents[2]))
 
-from helpers import DATAFRAME_NOTEBOOK_CASE_STUDIES, show_notebook_case_studies
+from helpers import DATAFRAME_NOTEBOOK_CASE_STUDIES, show_notebook_case_studies, process_link
 
 df = DATAFRAME_NOTEBOOK_CASE_STUDIES.copy()
 
@@ -45,7 +45,7 @@ df["Image"] = [
 ]
 
 df["Title"] = [
-    '<a href="{}">{}</a>'.format(str(link).replace('/src/', '/src/_build/html/'), name)
+    '<a href="{}">{}</a>'.format(process_link(link), name)
     for link, name in zip(df["Link"], df["Title"])
 ]
 
@@ -66,7 +66,7 @@ show_notebook_case_studies(df_tutorials)
 df_case_studies = df[~(df['Keywords'].str.contains('Tutorial'))].copy()
 
 df_case_studies["Title"] = [
-    '<a href="{}">{}</a>'.format(str(link).replace('/src/', '/src/_build/html/'), name)
+    '<a href="{}">{}</a>'.format(process_link(link), name)
     for link, name in zip(df_case_studies["Link"], df_case_studies["Title"])
 ]
 

@@ -55,10 +55,8 @@ def get_notebook_case_studies_dataframe():
     items = []
     for ipath in notebooks:
         ntbk = nbf.read(ipath, nbf.NO_CONVERT)
-
         parsed_info = parse_cell(ntbk.cells[0])
-        parsed_info["Link"] = Path(ipath).parent / Path(ipath).name.replace(".ipynb", ".html")
-
+        parsed_info["Link"] = ipath
         items.append(parsed_info)
 
     df = pd.DataFrame(items)
@@ -69,4 +67,5 @@ def get_notebook_case_studies_dataframe():
 if __name__ == "__main__":
     df = get_notebook_case_studies_dataframe()
     print(df)
+    print(df["Link"][0])
     import pdb; pdb.set_trace()

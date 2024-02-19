@@ -86,15 +86,14 @@ QuPath
 ```
 ````
 
-Check out our series of introductiory **tutorials** on image analysis using Python::
-<!-- These **short guides** will help you start off on the right foot. -->
-<!-- - [🚩 Starting a new image analysis project](./sections/getting_started/pages/new_project.md) -->
+Check out our series of introductiory **tutorials** on image analysis using Python:
+
 - [🐍 Setting up Python for scientific image analysis](./sections/getting_started/pages/python_setup.md)
-- [🚩 Basics of image data manipulation in Python](./sections/getting_started/pages/image_manipulation.ipynb)
-- [✂️ Introduction to image segmentation](./sections/starter_packs/packs/image-segmentation/start_here.ipynb)
-- [📐 Introduction to image registration](./sections/starter_packs/packs/image-registration/start_here.ipynb)
-- [🪄 Introduction to image denoising](./sections/starter_packs/packs/image-denoising/start_here.ipynb)
-- [🐾 Introduction to object detection and tracking](./sections/starter_packs/packs/detection-and-tracking/start_here.ipynb)
+- [🚩 Basics of image data manipulation in Python](./sections/exploring_further/notebook_case_studies/notebooks/tutorials/image_manipulation.ipynb)
+- [✂️ Introduction to image segmentation](./sections/exploring_further/notebook_case_studies/notebooks/tutorials/image_segmentation_intro.ipynb)
+- [📐 Introduction to image registration](./sections/exploring_further/notebook_case_studies/notebooks/tutorials/image_registration_intro.ipynb)
+- [🪄 Introduction to image denoising](./sections/exploring_further/notebook_case_studies/notebooks/tutorials/image_denoising_intro.ipynb)
+- [🐾 Introduction to object detection and tracking](./sections/exploring_further/notebook_case_studies/notebooks/tutorials/detection_and_tracking_intro.ipynb)
 - [🧭 Next steps](./sections/getting_started/pages/next_steps.md)
 
 ## 🚀 Topical packs

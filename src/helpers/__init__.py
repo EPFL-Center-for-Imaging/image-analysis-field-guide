@@ -1,11 +1,10 @@
-from pathlib import Path
-import pandas as pd
 from itables import show
 from functools import partial
 from typing import List
+import os
 
-from dotenv import load_dotenv
-load_dotenv()
+# from dotenv import load_dotenv
+# load_dotenv()
 
 from helpers.notion_api import get_online_resources_dataframe, get_software_tools_dataframe
 from helpers.generate_notebook_case_studies import get_notebook_case_studies_dataframe
@@ -63,9 +62,17 @@ def minimize(input_string: str):
     return '-'.join(input_string.lower().split())
 
 
-def process_link(link):
-    processed_link = str(link).replace('/src/', '/src/_build/html/')
-    processed_link = processed_link.replace('/opt/src/_build/html', '')  # for docker (quick hack)
+def process_link(ipath):
+    # # Replace the extension
+    processed_link = ipath.replace(".ipynb", ".html")
+
+    # Split what is after /src/ - that is the relative path after the base URL
+    base, relpath = str(processed_link).split('/src/')
+
+    deploy_url = os.getenv("DEPLOY_URL", base+'/src/_build/html/')
+
+    processed_link = deploy_url + relpath
+
     return processed_link
 
 def filter_notebook_case_studies(tags: List[str]):
