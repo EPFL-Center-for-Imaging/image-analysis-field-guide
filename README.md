@@ -1,5 +1,5 @@
 ![EPFL Center for Imaging logo](https://imaging.epfl.ch/resources/logo-for-gitlab.svg)
-![screenshot](./images/screenshot.png)
+![screenshot](./src/images/epfl.png)
 # The Image Analysis Field Guide
 
 Essential toolkit to get started in scientific image analysis.
