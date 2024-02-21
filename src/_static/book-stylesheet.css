@@ -8,6 +8,11 @@ CSS that handles styling across the entire book.
     background-color: aqua;
 } */
 
+
+a {
+    text-decoration: none !important;
+}
+
 .google-sheet {
     border: 1px solid rgb(31, 31, 31);
 }

@@ -20,6 +20,7 @@ We are open to featuring new Jupyter notebooks. Please send an email to imaging@
 
 These contributions are very welcome:
 
+- Fixing bugs
 - Fixing typos
 - Improving the language
 - Improving the Jupyter book layout

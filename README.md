@@ -1,4 +1,5 @@
 ![EPFL Center for Imaging logo](https://imaging.epfl.ch/resources/logo-for-gitlab.svg)
+![screenshot](./images/screenshot.png)
 # The Image Analysis Field Guide
 
 Essential toolkit to get started in scientific image analysis.
@@ -37,12 +38,14 @@ jb build src --builder linkcheck
 
 ## Build and run with `docker`
 
-Build the image (for a given URL):
+Build the image (for the given URLs of your site and JupyterHub):
 
 ```
 docker build \
   --build-arg NOTION_KEY=$NOTION_KEY \
   --build-arg DEPLOY_URL=http://localhost:8080/ \
+  --build-arg JUPYTERHUB_HOST=localhost \
+  --build-arg JUPYTERHUB_PORT=8000 \
   -t $(whoami)/$(basename ${PWD}) .
 ```
 
@@ -58,21 +61,6 @@ Persistent:
 
 ```
 docker run -dp 8080:80 --name image-analysis-field-guide $(whoami)/$(basename ${PWD}):latest
-```
-
-## Deploy on GitHub Pages
-
-- Add a `NOTION_KEY` to the repository's **secrets**.
-- Tag the repository as `jupyter-book` to have it appear in the official [Gallery](https://executablebooks.org/en/latest/gallery/).
-
-## Launch button to a `JupyterHub`
-
-Edit this part of `_config.yml`:
-
-```yaml
-launch_buttons:
-  notebook_interface : jupyterlab
-  jupyterhub_url: "http://localhost:8000/"  # The URL for your JupyterHub.
 ```
 
 ## Contribute
