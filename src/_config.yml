@@ -8,15 +8,15 @@ only_build_toc_files: false
 
 launch_buttons:
   notebook_interface : jupyterlab
-  jupyterhub_url: "http://${JUPYTERHUB_HOST}:${JUPYTERHUB_PORT}/"  # The URL for your JupyterHub (e.g. http://localhost:8000/)
+  jupyterhub_url: "http://frank3:8000/"  # The URL for your JupyterHub (e.g. http://localhost:8000/)
 
 execute:
   # execute_notebooks: "cache"
   # execute_notebooks: "off"
   execute_notebooks: "auto"
   # Do not exectute the computational notebooks; only the itables
-  exclude_patterns:
-    - '*.ipynb'
+  # exclude_patterns:
+  #   - '*.ipynb'
 
 bibtex_bibfiles:
   - references.bib
@@ -38,7 +38,7 @@ sphinx:
   config:
     html_show_copyright: false
   
-parse:
+parse:sphin
   myst_enable_extensions:
     - linkify
     - html_admonition
