@@ -27,7 +27,7 @@ repository:
   path_to_book: "src"
 
 html:
-  announcement: "<img src='https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/People%20with%20professions/Construction%20Worker%20Medium%20Skin%20Tone.png' width='25' height='25' /> This site is a prototype! Please give us your feedback by filling in our <a href='https://docs.google.com/forms/d/e/1FAIpQLScl3ho-P_F_vO-wSG1CLJCkxEipImF0cQuY_l_o12CRWbKp0Q/viewform?usp=sf_link'>survey form</a>. Thank you!"
+  announcement: "<img src='https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/People%20with%20professions/Construction%20Worker%20Medium%20Skin%20Tone.png' width='25' height='25' /> This site is a prototype! Please give us your feedback by filling in our <a href='https://forms.gle/toHAP2ydydXBCndGA'>survey form</a>. Thank you!"
   favicon: "logo.ico"
   use_issues_button: false
   use_repository_button: true
@@ -35,10 +35,27 @@ html:
     hypothesis: true
 
 sphinx:
+  extra_extensions:
+    - nbsphinx
+    - sphinx_gallery.load_style
   config:
     html_show_copyright: false
-  
-parse:sphin
+    nbsphinx_thumbnails:
+      "sections/getting_started/python_setup": "_images/epfl.png"
+      "sections/exploring_further/notebook_case_studies/notebooks/tutorials/registration_3D_analysis": "_images/alert-geo.png"
+      "sections/exploring_further/notebook_case_studies/notebooks/tutorials/tracking_intro": "_images/tracking_fig.png"
+      "sections/exploring_further/notebook_case_studies/notebooks/tutorials/denoising_intro": "_images/denoising_lg.png"
+      "sections/exploring_further/notebook_case_studies/notebooks/tutorials/image_manipulation": "_images/epfl.png"
+      "sections/exploring_further/notebook_case_studies/notebooks/tutorials/registration_intro": "_images/dic_fig.png"
+      "sections/exploring_further/notebook_case_studies/notebooks/tutorials/segmentation_intro": "_images/segmentation_lg.png"
+      "sections/exploring_further/notebook_case_studies/notebooks/tutorials/performance_dask_image": "_images/dask_image_lg.png"
+      "sections/exploring_further/notebook_case_studies/notebooks/tutorials/segmentation_stardist": "_images/stardist_fig.png"
+      "sections/exploring_further/notebook_case_studies/notebooks/tutorials/visualization_napari": "_images/segmentation_fig.png"
+      "sections/exploring_further/notebook_case_studies/notebooks/epfl_case_studies/crystallites_annotation": "_images/triangles_fig.png"
+      "sections/exploring_further/notebook_case_studies/notebooks/epfl_case_studies/lungs_segmentation_ct": "_images/lungs_fig.png"
+      "sections/exploring_further/notebook_case_studies/notebooks/epfl_case_studies/skeletonization": "_images/drosofig.png"
+
+parse:
   myst_enable_extensions:
     - linkify
     - html_admonition

@@ -27,7 +27,7 @@ Once you have downloaded the installer, run it to install `conda`.
 ````{tab-item} Windows
 1. Run the executable file you just downloaded (`Miniforge3-Windows-x86_64.exe`) and follow the instructions.
 2. Launch the *Anaconda Prompt* terminal from the start menu.
-```{image} ../../../images/anaconda_prompt.png
+```{image} ../../images/anaconda_prompt.png
 :align: center
 :width: 250px
 ```
@@ -129,13 +129,13 @@ pip install jupyterlab
 ````{admonition} Check your installation
 Type `jupyter lab` in your terminal. This should start the Jupyter lab application you just installed in your web browser. To stop Jupyter lab, press `Ctrl+C` in your terminal window.
 
-```{image} ../../../images/jlab-3.gif
+```{image} ../../images/jlab-3.gif
 :align: center
 :width: 95%
 ```
 ````
 
-One of the main features of Jupyter Lab is to enable viewing and editing `Jupyter notebooks`, which are interactive documents that combine code, visualizations, and narrative text, and are used by scientists to experiment with code and and demosntrate workflows. To have a better idea of what this looks like, you can have a look at our [Jupyter notebooks](../../exploring_further/notebook_case_studies/page.md) page.
+One of the main features of Jupyter Lab is to enable viewing and editing `Jupyter notebooks`, which are interactive documents that combine code, visualizations, and narrative text, and are used by scientists to experiment with code and and demosntrate workflows. To have a better idea of what this looks like, you can have a look at our [Jupyter notebooks](../exploring_further/notebook_case_studies/gallery.md) page.
 
 ## Install Napari
 
@@ -157,7 +157,7 @@ pip install "napari[all]"
 
 ````{admonition} Check your installation
 With your virtual environment activated, type `napari` in your terminal. The Napari viewer should open **in a separate window**.
-```{image} ../../../images/napari_terminal.gif
+```{image} ../../images/napari_terminal.gif
 :align: center
 :width: 95%
 ```

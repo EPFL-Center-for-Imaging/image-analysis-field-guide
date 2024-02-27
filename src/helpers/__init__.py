@@ -3,15 +3,10 @@ from functools import partial
 from typing import List
 import os
 
-# from dotenv import load_dotenv
-# load_dotenv()
-
 from helpers.notion_api import get_online_resources_dataframe, get_software_tools_dataframe
-from helpers.generate_notebook_case_studies import get_notebook_case_studies_dataframe
 
 DATAFRAME_ONLINE_RESOURCES = get_online_resources_dataframe()
 DATAFRAME_SOFTWARE_TOOLS = get_software_tools_dataframe()
-DATAFRAME_NOTEBOOK_CASE_STUDIES = get_notebook_case_studies_dataframe()
 
 show_online_resources = partial(
     show,
@@ -23,18 +18,6 @@ show_online_resources = partial(
     style="width:100%;margin:auto",
     paging=False,
     showIndex=False,
-)
-
-show_notebook_case_studies = partial(
-    show,
-    classes="display compact", 
-    columnDefs=[
-        {"className": "dt-left", "targets": [0]}
-    ],
-    style="width:100%;margin:auto",
-    paging=False,
-    showIndex=False,
-    dom="tr"
 )
 
 show_software_tools = partial(
@@ -75,25 +58,6 @@ def process_link(ipath):
 
     return processed_link
 
-def filter_notebook_case_studies(tags: List[str]):
-    df = DATAFRAME_NOTEBOOK_CASE_STUDIES.copy()
-
-    df["Title"] = [
-        '<a href="{}#{}">{}</a>'.format(process_link(link), minimize(tags[0]), name)
-        for link, name in zip(df["Link"], df["Title"])
-    ]
-
-    df["Image"] = [
-        '<img src="../../../../_images/{}" alt="Image" width="300">'.format(image)
-        for image in df["Image"]
-    ]
-
-    mask = df['Keywords'].str.contains('|'.join(tags), na=False)
-    df = df[mask].copy()
-    df.drop(['Link', 'Description'], axis='columns', inplace=True)
-
-    return df
-
 
 def filter_software_tools(tags: List[str]):
     df = DATAFRAME_SOFTWARE_TOOLS.copy()
@@ -107,4 +71,3 @@ def filter_software_tools(tags: List[str]):
 if __name__ == '__main__':
     print(DATAFRAME_SOFTWARE_TOOLS.head())
     print(DATAFRAME_ONLINE_RESOURCES.head())
-    print(DATAFRAME_NOTEBOOK_CASE_STUDIES.head())

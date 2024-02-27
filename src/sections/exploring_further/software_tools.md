@@ -12,10 +12,10 @@ kernelspec:
 ---
 # 🛠️ Software tools
 
-Browse our curated list of software tools on the topic of scientific image analysis.
+Browse our curated list of software tools for scientific image analysis.
 
 ```{admonition} Contribute
-Do you want to add a software tool to our list? Fill-in our [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSe4QDF4oGKojaLksrsizHotXpAOGbL4f1bQwyBoNlOztMPzGA/viewform?usp=sf_link) and we'll be happy to review your suggestion.
+Do you want to add a software tool to our list? Fill-in our [Google Form](https://forms.gle/8nMHeHRwptzjFnz69) and we'll be happy to review your suggestion.
 ```
 
 ## ⭐ Favourites
@@ -30,7 +30,7 @@ init_notebook_mode(all_interactive=True, connected=True)
 import sys
 from pathlib import Path
 
-sys.path.append(str(Path.cwd().parents[2]))
+sys.path.append(str(Path.cwd().parents[1]))
 
 from helpers import DATAFRAME_SOFTWARE_TOOLS, show_software_tools
 

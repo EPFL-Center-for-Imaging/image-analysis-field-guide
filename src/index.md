@@ -4,26 +4,6 @@
 
 **Essential toolkit to get started in scientific image analysis.**
 
-<!-- 
-
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Alien.png" alt="Alien" width="25" height="25" />
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Symbols/Triangular%20Flag.png" alt="Triangular Flag" width="25" height="25" />
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Star.png" alt="Star" width="25" height="25" />
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/High%20Voltage.png" alt="High Voltage" width="25" height="25" />
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Fire.png" alt="Fire" width="25" height="25" />
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Airplane.png" alt="Airplane" width="25" height="25" />
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Activities/Party%20Popper.png" alt="Party Popper" width="25" height="25" />
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Food/Tropical%20Drink.png" alt="Tropical Drink" width="25" height="25" />
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Animals/Jellyfish.png" alt="Jellyfish" width="25" height="25" />
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Animals/Paw%20Prints.png" alt="Paw Prints" width="25" height="25" />
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Animals/Peacock.png" alt="Peacock" width="25" height="25" />
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Animals/Snake.png" alt="Snake" width="25" height="25" />
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Scissors.png" alt="Scissors" width="25" height="25" />
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Triangular%20Ruler.png" alt="Triangular Ruler" width="25" height="25" />
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Rocket.png" alt="Rocket" width="25" height="25" />
-
- -->
-
 Welcome! Use this field guide to quickly find the information you need to tackle your scientific image analysis challenges.
 
 ```{contents}
@@ -31,8 +11,6 @@ Welcome! Use this field guide to quickly find the information you need to tackle
 ```
 
 ## 🔖 Getting started
-
-<!-- New to image analysis? This section will help you start off on the right foot. -->
 
 These are our favourite **resources** for learning the basics of image analysis:
 
@@ -86,15 +64,23 @@ QuPath
 ```
 ````
 
-Check out our series of introductiory **tutorials** on image analysis using Python:
+### Tutorials
 
-- [🐍 Setting up Python for scientific image analysis](./sections/getting_started/pages/python_setup.md)
-- [🚩 Basics of image data manipulation in Python](./sections/exploring_further/notebook_case_studies/notebooks/tutorials/image_manipulation.ipynb)
-- [✂️ Introduction to image segmentation](./sections/exploring_further/notebook_case_studies/notebooks/tutorials/image_segmentation_intro.ipynb)
-- [📐 Introduction to image registration](./sections/exploring_further/notebook_case_studies/notebooks/tutorials/image_registration_intro.ipynb)
-- [🪄 Introduction to image denoising](./sections/exploring_further/notebook_case_studies/notebooks/tutorials/image_denoising_intro.ipynb)
-- [🐾 Introduction to object detection and tracking](./sections/exploring_further/notebook_case_studies/notebooks/tutorials/detection_and_tracking_intro.ipynb)
-- [🧭 Next steps](./sections/getting_started/pages/next_steps.md)
+Check out our series of introductiory Jupyter notebook tutorials on image analysis using Python.
+
+```{nblinkgallery}
+:glob:
+sections/getting_started/python_setup
+sections/exploring_further/notebook_case_studies/notebooks/tutorials/*
+```
+
+<!-- - [🐍 Setting up Python for scientific image analysis](./sections/getting_started/python_setup.md)
+- [🚩 Image data manipulation in Python](./sections/exploring_further/notebook_case_studies/notebooks/tutorials/image_manipulation.ipynb)
+- [✂️ Introduction to image segmentation](./sections/exploring_further/notebook_case_studies/notebooks/tutorials/segmentation_intro.ipynb)
+- [📐 Introduction to image registration](./sections/exploring_further/notebook_case_studies/notebooks/tutorials/registration_intro.ipynb)
+- [🪄 Simple image denoising](./sections/exploring_further/notebook_case_studies/notebooks/tutorials/denoising_intro.ipynb)
+- [🐾 Introduction to object detection and tracking](./sections/exploring_further/notebook_case_studies/notebooks/tutorials/tracking_intro.ipynb)
+- [🧭 Next steps](./sections/getting_started/next_steps.md) -->
 
 ## 🚀 Topical packs
 
@@ -108,18 +94,18 @@ Delve deeper into individual topics.
 ````{grid} 1 1 2 3
 ```{grid-item-card}
 :img-top: ./images/segmentation_tm.png
-:link: ./sections/starter_packs/packs/image-segmentation/page.html
+:link: ./sections/starter_packs/image_segmentation.html
 :text-align: center
 Image segmentation
 ```
 ```{grid-item-card}
-:link: ./sections/starter_packs/packs/image-registration/page.html
+:link: ./sections/starter_packs/image_registration.html
 :img-top: ./images/registration_tm.png
 :text-align: center
 Image registration
 ```
 ```{grid-item-card}
-:link: ./sections/starter_packs/packs/image-denoising/page.html
+:link: ./sections/starter_packs/image_denoising.html
 :img-top: ./images/denoising_tm.png
 :text-align: center
 Image denoising
@@ -127,45 +113,95 @@ Image denoising
 ````
 ````{grid} 1 1 2 3
 ```{grid-item-card}
-:link: ./sections/starter_packs/packs/detection-and-tracking/page.html
+:link: ./sections/starter_packs/detection_and_tracking.html
 :img-top: ./images/tracking_tm.png
 :text-align: center
 Object detection and tracking
 ```
 ```{grid-item-card}
-:link: ./sections/starter_packs/packs/image-data-visualization/page.html
+:link: ./sections/starter_packs/image_data_visualization.html
 :img-top: ./images/visualization_tm.png
 :text-align: center
 Image data visualization
 ```
 ```{grid-item-card}
-:link: ./sections/starter_packs/packs/performance-optimization/page.html
+:link: ./sections/starter_packs/performance_optimization.html
 :img-top: ./images/performance_tm.png
 :text-align: center
 Performance optimization
 ```
 ````
 
-## 📚 Collections
+<!-- ## 📚 Collections -->
 
-Browse our collections of learning resources, jupyter notebooks, and software tools for image analysis.
+<!-- Browse our collections of learning resources, software tools, and jupyter notebooks for image analysis. -->
 
-- [🎓 Learning resources](./sections/exploring_further/online_resources/page.md)
-- [💡 Jupyter notebooks](./sections/exploring_further/notebook_case_studies/page.md)
-- [🛠️ Software tools](./sections/exploring_further/software_tools/page.md)
+## 🎓 Learning resources
+
+Browse our curated list of free online resources on the topic of scientific image analysis.
+
+````{grid} 1 1 2 3
+```{grid-item-card} Learning resources
+:link: ./sections/exploring_further/online_resources.html
+:img-top: https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Graduation%20Cap.png
+:text-align: center
+```
+````
+
+## 🛠️ Software tools
+
+Browse our curated list of software tools for scientific image analysis.
+
+````{grid} 1 1 2 3
+```{grid-item-card} Software tools
+:link: ./sections/exploring_further/software_tools.html
+:img-top: https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Hammer%20and%20Wrench.png
+:text-align: center
+```
+````
+
+## 💡 Example projects
+
+`````{margin}
+````{admonition} Launch the notebooks
+If you are in EPFL, you can launch the notebooks to run them interactively on our `Jupyter Hub` by clicking on the rocket icon at the top of a notebook page.
+```{image} ./images/jupyterhub.png
+:align: center
+```
+````
+`````
+
+To learn more about scientific image processing and analysis in Python, browse our collection of example image analysis projects done in collaboration with EPFL labs and presented in the form of Jupyter notebooks.
+
+
+```{nblinkgallery}
+:glob:
+sections/exploring_further/notebook_case_studies/notebooks/epfl_case_studies/*
+```
 
 ## 🧑‍🤝‍🧑 Join the community
 
 If you are in EPFL, you can join our *Matrix server* by connecting to [element.epfl.ch](https://element.epfl.ch/#/room/#image_analysis_hub-launchpad:epfl.ch).
 
-## 🤝 Contribute
+![element](./images/element.png)
 
-Read our [Contributor's guide](https://github.com/EPFL-Center-for-Imaging/image-analysis-field-guide/blob/main/CONTRIBUTING.md) to find out more about the different ways you can contribute to our project.
-
-## 🖋️ Feedback
-
-Please fill-in our [Survey Form](https://docs.google.com/forms/d/e/1FAIpQLScl3ho-P_F_vO-wSG1CLJCkxEipImF0cQuY_l_o12CRWbKp0Q/viewform?usp=sf_link). We'd love to hear your opinion about our site!
-
-## 🗨️ Add comments
-
-You can add comments to any page of this book; check-out the `<` button in the upper-right corner of this page!
+````{grid} 1 1 2 3
+```{grid-item-card} Contribute
+:link: https://github.com/EPFL-Center-for-Imaging/image-analysis-field-guide/blob/main/CONTRIBUTING.md
+:img-top: https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Microscope.png
+:text-align: center
+Read our guide to find out more about the different ways you can contribute to our project.
+```
+```{grid-item-card} Feedback
+:link: https://forms.gle/toHAP2ydydXBCndGA
+:img-top: https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Black%20Nib.png
+:text-align: center
+Please fill-in our **survey form**. We'd love to hear your opinion about our site!
+```
+```{grid-item-card} Add comments
+:link: https://web.hypothes.is/
+:img-top: https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Speech%20Balloon.png
+:text-align: center
+You can add comments to any page of this book via Hypothesis; check-out the `<` button in the upper-right corner of this page!
+```
+````
