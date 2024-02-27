@@ -3,3 +3,5 @@ jupyterlab
 jupytext
 jupyterlab_myst
 itables
+sphinx-gallery
+nbsphinx

@@ -10,7 +10,7 @@ kernelspec:
   language: python
   name: python3
 ---
-![performance](../../../../images/performance_lg.png)
+![performance](../../images/performance_lg.png)
 
 # 🔋 Performance optimization
 
@@ -23,13 +23,15 @@ tags = ["Optimization"]
 
 ## 🎓 Learning resources
 
+Here is our curated list of free online resources on the topic of performance optimization.
+
 ```{code-cell} ipython3
 :tags: [remove-input]
 
 from itables import init_notebook_mode
 from pathlib import Path
 import sys
-sys.path.append(str(Path.cwd().parents[3]))
+sys.path.append(str(Path.cwd().parents[1]))
 from helpers import *
 
 init_notebook_mode(all_interactive=True, connected=True)
@@ -38,35 +40,18 @@ df = filter_online_resources(tags)
 show_online_resources(df, dom="tr")
 ```
 
-## 💡 Jupyter notebooks
+## 💡 Tutorials
 
-### Tutorials
+Check out our tutorial notebooks related to performance optimization.
 
-```{code-cell} ipython3
-:tags: [remove-input]
-
-df = filter_notebook_case_studies(tags)
-
-df_tutorials = df[df['Keywords'].str.contains('Tutorial')].copy()
-df_tutorials.drop('Keywords', axis='columns', inplace=True)
-
-show_notebook_case_studies(df_tutorials)
-```
-
-### Case studies from EPFL
-
-```{code-cell} ipython3
-:tags: [remove-input]
-
-df = filter_notebook_case_studies(tags)
-
-df_case_studies = df[~(df['Keywords'].str.contains('Tutorial'))].copy()
-df_case_studies.drop('Keywords', axis='columns', inplace=True)
-
-show_notebook_case_studies(df_case_studies)
+```{nblinkgallery}
+:glob:
+../exploring_further/notebook_case_studies/notebooks/tutorials/performance_*
 ```
 
 ## 🛠️ Software tools
+
+Take a look at these software tools to help you solve your performance optimization problems.
 
 ```{code-cell} ipython3
 :tags: [remove-input]
