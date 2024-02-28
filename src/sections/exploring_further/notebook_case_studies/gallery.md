@@ -4,7 +4,7 @@ To learn more about scientific image processing and analysis in Python, browse o
 
 ````{admonition} Launch the notebooks
 If you are in EPFL, you can launch the notebooks to run them interactively on our `Jupyter Hub` by clicking on the rocket icon at the top of a notebook page.
-```{image} ../../../images/jupyterhub.png
+```{image} ../../../images/jupyterhub.jpeg
 :align: center
 ```
 ````

@@ -10,7 +10,7 @@ kernelspec:
   language: python
   name: python3
 ---
-![registration](../../images/registration_lg.png)
+![registration](../../images/registration_lg.jpeg)
 
 # 📐 Image registration
 

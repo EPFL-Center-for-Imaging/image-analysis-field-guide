@@ -10,7 +10,7 @@ kernelspec:
   language: python
   name: python3
 ---
-![performance](../../images/performance_lg.png)
+![performance](../../images/performance_lg.jpeg)
 
 # 🔋 Performance optimization
 

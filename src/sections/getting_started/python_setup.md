@@ -27,7 +27,7 @@ Once you have downloaded the installer, run it to install `conda`.
 ````{tab-item} Windows
 1. Run the executable file you just downloaded (`Miniforge3-Windows-x86_64.exe`) and follow the instructions.
 2. Launch the *Anaconda Prompt* terminal from the start menu.
-```{image} ../../images/anaconda_prompt.png
+```{image} ../../images/anaconda_prompt.jpeg
 :align: center
 :width: 250px
 ```
@@ -127,7 +127,7 @@ pip install jupyterlab
 ```
 
 ````{admonition} Check your installation
-Type `jupyter lab` in your terminal. This should start the Jupyter lab application you just installed in your web browser. To stop Jupyter lab, press `Ctrl+C` in your terminal window.
+Type `jupyter lab` in your terminal. This should start the Jupyter lab application in your web browser. To stop Jupyter lab, press `Ctrl+C` in your terminal window.
 
 ```{image} ../../images/jlab-3.gif
 :align: center
@@ -135,7 +135,7 @@ Type `jupyter lab` in your terminal. This should start the Jupyter lab applicati
 ```
 ````
 
-One of the main features of Jupyter Lab is to enable viewing and editing `Jupyter notebooks`, which are interactive documents that combine code, visualizations, and narrative text, and are used by scientists to experiment with code and and demosntrate workflows. To have a better idea of what this looks like, you can have a look at our [Jupyter notebooks](../exploring_further/notebook_case_studies/gallery.md) page.
+One of the main features of Jupyter Lab is to enable viewing and editing `Jupyter notebooks`, which are interactive documents that combine code, visualizations, and narrative text, and are used by scientists to experiment with code and and demonstrate workflows. To have a better idea of what this looks like, you can have a look at our [Jupyter notebooks](../exploring_further/notebook_case_studies/gallery.md) page.
 
 ## Install Napari
 
@@ -196,7 +196,7 @@ Spyder
 
 Setting up Python for working on your image analysis project typically involves the following steps.
 
-- Installing Python and *conda* through **Miniconda**.
+- Installing Python, which you can do (for example) via *conda*, which you can obtain by installing **Miniconda**.
 - Creating a **virtual environment** for your project.
 - Installing packages in your virtual environment using *pip*.
 - Installing a program to develop code, such as **Jupyter lab** or a **code editor**.

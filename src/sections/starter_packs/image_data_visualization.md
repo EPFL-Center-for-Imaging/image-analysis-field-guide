@@ -10,7 +10,7 @@ kernelspec:
   language: python
   name: python3
 ---
-![visualization](../../images/visualization_lg.png)
+![visualization](../../images/visualization_lg.jpeg)
 
 # 🌻 Image data visualization
 
@@ -44,7 +44,7 @@ show_online_resources(df, dom="tr")
 
 Check out our tutorial notebooks related to image data visualization.
 
-```{nblinkgallery} Tuto
+```{nblinkgallery}
 :glob:
 ../exploring_further/notebook_case_studies/notebooks/tutorials/visualization_*
 ```

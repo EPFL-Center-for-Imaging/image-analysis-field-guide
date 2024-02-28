@@ -10,7 +10,7 @@ kernelspec:
   language: python
   name: python3
 ---
-![segmentation](../../images/segmentation_lg.png)
+![segmentation](../../images/segmentation_lg.jpeg)
 
 # ✂️ Image segmentation
 

@@ -4,13 +4,6 @@ chapters:
 - file: sections/getting_started/README
   sections:
     - file: sections/getting_started/tutorials
-  # - file: sections/getting_started/python_setup
-  # - file: sections/exploring_further/notebook_case_studies/notebooks/tutorials/image_manipulation.ipynb
-  # - file: sections/exploring_further/notebook_case_studies/notebooks/tutorials/segmentation_intro.ipynb
-  # - file: sections/exploring_further/notebook_case_studies/notebooks/tutorials/registration_intro.ipynb
-  # - file: sections/exploring_further/notebook_case_studies/notebooks/tutorials/denoising_intro.ipynb
-  # - file: sections/exploring_further/notebook_case_studies/notebooks/tutorials/tracking_intro.ipynb
-  # - file: sections/getting_started/next_steps
 - file: sections/starter_packs/README
   sections:
   - file: sections/starter_packs/image_segmentation
@@ -19,8 +12,6 @@ chapters:
   - file: sections/starter_packs/detection_and_tracking
   - file: sections/starter_packs/image_data_visualization
   - file: sections/starter_packs/performance_optimization
-# - file: sections/exploring_further/README
-  # sections:
 - file: sections/exploring_further/online_resources
 - file: sections/exploring_further/software_tools
 - file: sections/exploring_further/notebook_case_studies/gallery

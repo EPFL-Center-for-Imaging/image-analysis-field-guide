@@ -34,7 +34,7 @@ Fiji
 ```
 ```{grid-item-card}
 :link: https://www.ilastik.org/
-:img-top: ../../images/ilastik_square.png
+:img-top: ../../images/ilastik_square.jpeg
 :text-align: center
 Ilastik
 ```

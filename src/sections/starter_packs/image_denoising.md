@@ -10,7 +10,7 @@ kernelspec:
   language: python
   name: python3
 ---
-![denoising](../../images/denoising_lg.png)
+![denoising](../../images/denoising_lg.jpeg)
 
 # 🪄 Image denoising
 

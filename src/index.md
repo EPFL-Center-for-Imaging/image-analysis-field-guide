@@ -1,4 +1,4 @@
-![epfl](images/epfl.png)
+![epfl](images/epfl.jpeg)
 
 # The image analysis field guide
 
@@ -46,7 +46,7 @@ Fiji
 ```
 ```{grid-item-card}
 :link: https://www.ilastik.org/
-:img-top: ./images/ilastik_square.png
+:img-top: ./images/ilastik_square.jpeg
 :text-align: center
 Ilastik
 ```
@@ -74,14 +74,6 @@ sections/getting_started/python_setup
 sections/exploring_further/notebook_case_studies/notebooks/tutorials/*
 ```
 
-<!-- - [🐍 Setting up Python for scientific image analysis](./sections/getting_started/python_setup.md)
-- [🚩 Image data manipulation in Python](./sections/exploring_further/notebook_case_studies/notebooks/tutorials/image_manipulation.ipynb)
-- [✂️ Introduction to image segmentation](./sections/exploring_further/notebook_case_studies/notebooks/tutorials/segmentation_intro.ipynb)
-- [📐 Introduction to image registration](./sections/exploring_further/notebook_case_studies/notebooks/tutorials/registration_intro.ipynb)
-- [🪄 Simple image denoising](./sections/exploring_further/notebook_case_studies/notebooks/tutorials/denoising_intro.ipynb)
-- [🐾 Introduction to object detection and tracking](./sections/exploring_further/notebook_case_studies/notebooks/tutorials/tracking_intro.ipynb)
-- [🧭 Next steps](./sections/getting_started/next_steps.md) -->
-
 ## 🚀 Topical packs
 
 ````{margin}
@@ -93,20 +85,20 @@ Delve deeper into individual topics.
 
 ````{grid} 1 1 2 3
 ```{grid-item-card}
-:img-top: ./images/segmentation_tm.png
+:img-top: ./images/segmentation_tm.jpeg
 :link: ./sections/starter_packs/image_segmentation.html
 :text-align: center
 Image segmentation
 ```
 ```{grid-item-card}
 :link: ./sections/starter_packs/image_registration.html
-:img-top: ./images/registration_tm.png
+:img-top: ./images/registration_tm.jpeg
 :text-align: center
 Image registration
 ```
 ```{grid-item-card}
 :link: ./sections/starter_packs/image_denoising.html
-:img-top: ./images/denoising_tm.png
+:img-top: ./images/denoising_tm.jpeg
 :text-align: center
 Image denoising
 ```
@@ -114,27 +106,23 @@ Image denoising
 ````{grid} 1 1 2 3
 ```{grid-item-card}
 :link: ./sections/starter_packs/detection_and_tracking.html
-:img-top: ./images/tracking_tm.png
+:img-top: ./images/tracking_tm.jpeg
 :text-align: center
 Object detection and tracking
 ```
 ```{grid-item-card}
 :link: ./sections/starter_packs/image_data_visualization.html
-:img-top: ./images/visualization_tm.png
+:img-top: ./images/visualization_tm.jpeg
 :text-align: center
 Image data visualization
 ```
 ```{grid-item-card}
 :link: ./sections/starter_packs/performance_optimization.html
-:img-top: ./images/performance_tm.png
+:img-top: ./images/performance_tm.jpeg
 :text-align: center
 Performance optimization
 ```
 ````
-
-<!-- ## 📚 Collections -->
-
-<!-- Browse our collections of learning resources, software tools, and jupyter notebooks for image analysis. -->
 
 ## 🎓 Learning resources
 
@@ -165,7 +153,7 @@ Browse our curated list of software tools for scientific image analysis.
 `````{margin}
 ````{admonition} Launch the notebooks
 If you are in EPFL, you can launch the notebooks to run them interactively on our `Jupyter Hub` by clicking on the rocket icon at the top of a notebook page.
-```{image} ./images/jupyterhub.png
+```{image} ./images/jupyterhub.jpeg
 :align: center
 ```
 ````
@@ -183,7 +171,7 @@ sections/exploring_further/notebook_case_studies/notebooks/epfl_case_studies/*
 
 If you are in EPFL, you can join our *Matrix server* by connecting to [element.epfl.ch](https://element.epfl.ch/#/room/#image_analysis_hub-launchpad:epfl.ch).
 
-![element](./images/element.png)
+![element](./images/element.jpeg)
 
 ````{grid} 1 1 2 3
 ```{grid-item-card} Contribute

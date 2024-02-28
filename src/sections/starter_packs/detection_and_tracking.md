@@ -10,7 +10,7 @@ kernelspec:
   language: python
   name: python3
 ---
-![tracking](../../images/tracking_lg.png)
+![tracking](../../images/tracking_lg.jpeg)
 
 # 🐾 Object detection and tracking
 
