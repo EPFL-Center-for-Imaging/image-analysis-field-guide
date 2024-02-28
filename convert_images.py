@@ -22,4 +22,4 @@ def convert_png_to_jpeg(directory):
                 print(f"Converted '{filename}' to JPEG format.")
 
 # Replace 'your_directory_path' with the path of your folder
-convert_png_to_jpeg('/home/wittwer/code/image-analysis-field-guide/src/images')
+convert_png_to_jpeg('./images')

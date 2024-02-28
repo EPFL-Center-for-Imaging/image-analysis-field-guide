@@ -170,6 +170,7 @@ src/sections/exploring_further/notebook_case_studies/data/
 **/data/**
 
 deploy_field_guide.sh
+convert_images.py
 
 .vscode/
 
