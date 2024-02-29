@@ -4,9 +4,9 @@ CSS that handles styling across the entire book.
   
 \*--------------------------------------------------------------------*/ 
 
-/* .dropdown-download-button .fa-download {
-    display: none;
-} */
+.dropdown-download-buttons {
+    display: none !important;
+}
 
 a {
     text-decoration: none !important;
