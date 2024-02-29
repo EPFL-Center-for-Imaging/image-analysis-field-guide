@@ -1,4 +1,4 @@
-# Tutorials
+# 🌱 Tutorials
 
 Check out our series of introductiory Jupyter notebook tutorials on image analysis using Python.
 

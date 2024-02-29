@@ -1,9 +1,8 @@
 format: jb-book
 root: index
 chapters:
-- file: sections/getting_started/README
-  sections:
-    - file: sections/getting_started/tutorials
+# - file: sections/getting_started/README
+  # sections:
 - file: sections/starter_packs/README
   sections:
   - file: sections/starter_packs/image_segmentation
@@ -14,4 +13,5 @@ chapters:
   - file: sections/starter_packs/performance_optimization
 - file: sections/exploring_further/online_resources
 - file: sections/exploring_further/software_tools
+- file: sections/getting_started/tutorials
 - file: sections/exploring_further/notebook_case_studies/gallery

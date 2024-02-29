@@ -64,15 +64,15 @@ QuPath
 ```
 ````
 
-### Tutorials
+Read our **setup guide**:
 
-Check out our series of introductiory Jupyter notebook tutorials on image analysis using Python.
-
-```{nblinkgallery}
-:glob:
-sections/getting_started/python_setup
-sections/exploring_further/notebook_case_studies/notebooks/tutorials/*
+````{grid} 1 1 2 3
+```{grid-item-card} Setting up Python for scientific image analysis
+:link: ./sections/getting_started/python_setup.html
+:img-top: https://i0.wp.com/www.inferencelab.com/wp-content/uploads/Python-logo-notext.svg_.png
+:text-align: center
 ```
+````
 
 ## 🚀 Topical packs
 
@@ -124,9 +124,9 @@ Performance optimization
 ```
 ````
 
-## 🎓 Learning resources
+## 📚 Collections
 
-Browse our curated list of free online resources on the topic of scientific image analysis.
+Browse our curated lists of online resources, softwaret tools, and tutorials on the topic of scientific image analysis.
 
 ````{grid} 1 1 2 3
 ```{grid-item-card} Learning resources
@@ -134,19 +134,18 @@ Browse our curated list of free online resources on the topic of scientific imag
 :img-top: https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Graduation%20Cap.png
 :text-align: center
 ```
-````
-
-## 🛠️ Software tools
-
-Browse our curated list of software tools for scientific image analysis.
-
-````{grid} 1 1 2 3
 ```{grid-item-card} Software tools
 :link: ./sections/exploring_further/software_tools.html
 :img-top: https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Hammer%20and%20Wrench.png
 :text-align: center
 ```
+```{grid-item-card} Tutorials
+:link: ./sections/getting_started/tutorials.html
+:img-top: https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Animals/Seedling.png
+:text-align: center
+```
 ````
+
 
 ## 💡 Example projects
 
@@ -159,7 +158,7 @@ If you are in EPFL, you can launch the notebooks to run them interactively on ou
 ````
 `````
 
-To learn more about scientific image processing and analysis in Python, browse our collection of example image analysis projects done in collaboration with EPFL labs and presented in the form of Jupyter notebooks.
+Browse our collection of example image analysis projects done in collaboration with EPFL labs and presented in the form of Jupyter notebooks.
 
 
 ```{nblinkgallery}
@@ -185,11 +184,5 @@ Read our guide to find out more about the different ways you can contribute to o
 :img-top: https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Black%20Nib.png
 :text-align: center
 Please fill-in our **survey form**. We'd love to hear your opinion about our site!
-```
-```{grid-item-card} Add comments
-:link: https://web.hypothes.is/
-:img-top: https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Speech%20Balloon.png
-:text-align: center
-You can add comments to any page of this book via Hypothesis; check-out the `<` button in the upper-right corner of this page!
 ```
 ````
