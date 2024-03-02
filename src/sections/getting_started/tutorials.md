@@ -13,4 +13,4 @@ If you are in EPFL, you can launch the notebooks to run them interactively on ou
 :glob:
 ./python_setup
 ../exploring_further/notebook_case_studies/notebooks/tutorials/*
-```
+```gallery

@@ -158,7 +158,7 @@ If you are in EPFL, you can launch the notebooks to run them interactively on ou
 ````
 `````
 
-Browse our collection of example image analysis projects done in collaboration with EPFL labs and presented in the form of Jupyter notebooks.
+Browse our collection of example image analysis projects done in collaboration with EPFL labs and presented as Jupyter notebooks.
 
 
 ```{nblinkgallery}

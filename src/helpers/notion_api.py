@@ -3,9 +3,6 @@ import os
 import pandas as pd
 from typing import List
 
-# from dotenv import load_dotenv
-# load_dotenv()
-
 ONLINE_RESOURCES_DATABASE_ID = "b056be0b6f22499eb08c0d466c082686"
 SOFTWARE_TOOLS_DATABASE_ID = "043e925d562a4d688d83fd8f6a2aad07"
 

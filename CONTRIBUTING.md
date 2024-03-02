@@ -1,4 +1,4 @@
-# 🤝 Contributor's guide
+# 🤝 Contributing guide
 
 Contributions to our project are welcome.
 

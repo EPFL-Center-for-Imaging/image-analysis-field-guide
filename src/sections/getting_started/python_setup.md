@@ -79,11 +79,11 @@ Let’s install a few Python packages into your *project-env* environment. To do
 conda activate project-env
 ```
 
-If you successfully activated the environment, you should see `(project-env)` to the left of your command prompt. If you *deactivate* your environment and switch back to the `(base)` environment, you can use the `conda deactivate` command.
+If you successfully activated the environment, you should see `(project-env)` to the left of your command prompt. To *deactivate* your environment and switch back to the `(base)` environment, you can use the `conda deactivate` command.
 
 ## Install packages
 
-Once you have activated your environment, you can install packages in it. Packages provide useful functionalities. Many packages are available for scientific computing, image processing and analysis in Python. Have a look at the projects below, which are all installable as Python packages.
+Once you have activated your environment, you can install packages in it. Many packages are available for scientific computing, image processing and analysis in Python. For example, take a look at the projects below:
 
 ````{grid} 1 1 2 3
 ```{grid-item-card}
@@ -108,9 +108,7 @@ Scipy
 
 You can install packages using your terminal and a **package manager** program. By default, Python includes a package manager called `pip` which lets you install packages from the official Python Package Index, also known as [PyPI](https://pypi.org/).
 
-Let's install Scikit-image in your virtual environment. The collection of algorithms and tools that this library provides will certainly be useful!
-
-Type the following command in your terminal:
+Let's install Scikit-image in your `project-env` virtual environment. To do so, type the following command in your terminal:
 
 ```
 pip install scikit-image
@@ -135,7 +133,7 @@ Type `jupyter lab` in your terminal. This should start the Jupyter lab applicati
 ```
 ````
 
-One of the main features of Jupyter Lab is to enable viewing and editing `Jupyter notebooks`, which are interactive documents that combine code, visualizations, and narrative text, and are used by scientists to experiment with code and and demonstrate workflows. To have a better idea of what this looks like, you can have a look at our [Jupyter notebooks](../exploring_further/notebook_case_studies/gallery.md) page.
+One of the main features of Jupyter Lab is to enable viewing and editing `Jupyter notebooks`, which are interactive documents that combine code, visualizations, and narrative text, and are used by scientists to experiment with code and and demonstrate workflows. To have a better idea of what notebooks looks like, take a look at our [Tutorials](../getting_started/tutorials.md) gallery.
 
 ## Install Napari
 
@@ -169,7 +167,7 @@ You can also find the official Napari installation instructions [here](https://n
 
 Code editors provide many useful features, including syntax highlighting, a file system manager, integrated terminals, and code auto-completion. You can also interact with Jupyter notebooks directly in your code editor instead of using your web browser.
 
-We recommend that you pick and try one of the code editors below.
+We recommend that you try and pick one of the code editors below.
 
 ````{grid} 1 1 2 3
 ```{grid-item-card}
