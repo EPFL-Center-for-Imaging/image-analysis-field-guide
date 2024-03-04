@@ -46,7 +46,7 @@ Check out our tutorial notebooks related to object detection and tracking.
 
 ```{nblinkgallery}
 :glob:
-../exploring_further/notebook_case_studies/notebooks/tutorials/tracking_*
+../notebooks/tutorials/tracking_*
 ```
 
 ## 🛠️ Software tools

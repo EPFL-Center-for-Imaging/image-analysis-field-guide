@@ -22,7 +22,7 @@ RUN pip3 install -r requirements.txt
 
 COPY ./src/ ./src/
 
-RUN pip3 install -r ./src/sections/exploring_further/notebook_case_studies/notebooks/requirements.txt
+RUN pip3 install -r ./src/sections/notebooks/requirements.txt
 
 ARG NOTION_KEY
 ARG DEPLOY_URL

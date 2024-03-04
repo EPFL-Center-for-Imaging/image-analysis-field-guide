@@ -1,9 +1,7 @@
 format: jb-book
 root: index
 chapters:
-# - file: sections/getting_started/README
-  # sections:
-- file: sections/starter_packs/README
+- file: sections/starter_packs/index
   sections:
   - file: sections/starter_packs/image_segmentation
   - file: sections/starter_packs/image_registration
@@ -11,7 +9,7 @@ chapters:
   - file: sections/starter_packs/detection_and_tracking
   - file: sections/starter_packs/image_data_visualization
   - file: sections/starter_packs/performance_optimization
-- file: sections/exploring_further/online_resources
-- file: sections/exploring_further/software_tools
-- file: sections/getting_started/tutorials
-- file: sections/exploring_further/notebook_case_studies/gallery
+- file: sections/online_resources
+- file: sections/software_tools
+- file: sections/tutorials
+- file: sections/example_projects

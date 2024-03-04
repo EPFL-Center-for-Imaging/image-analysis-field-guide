@@ -30,7 +30,7 @@ init_notebook_mode(all_interactive=True, connected=True)
 import sys
 from pathlib import Path
 
-sys.path.append(str(Path.cwd().parents[1]))
+sys.path.append(str(Path.cwd().parents[0]))
 
 from helpers import DATAFRAME_SOFTWARE_TOOLS, show_software_tools
 

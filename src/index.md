@@ -68,7 +68,7 @@ Read our **setup guide**:
 
 ````{grid} 1 1 2 3
 ```{grid-item-card} Setting up Python for scientific image analysis
-:link: ./sections/getting_started/python_setup.html
+:link: ./sections/python_setup.html
 :img-top: https://i0.wp.com/www.inferencelab.com/wp-content/uploads/Python-logo-notext.svg_.png
 :text-align: center
 ```
@@ -130,17 +130,17 @@ Browse our curated lists of online resources, softwaret tools, and tutorials on 
 
 ````{grid} 1 1 2 3
 ```{grid-item-card} Learning resources
-:link: ./sections/exploring_further/online_resources.html
+:link: ./sections/online_resources.html
 :img-top: https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Graduation%20Cap.png
 :text-align: center
 ```
 ```{grid-item-card} Software tools
-:link: ./sections/exploring_further/software_tools.html
+:link: ./sections/software_tools.html
 :img-top: https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Hammer%20and%20Wrench.png
 :text-align: center
 ```
 ```{grid-item-card} Tutorials
-:link: ./sections/getting_started/tutorials.html
+:link: ./sections/tutorials.html
 :img-top: https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Animals/Seedling.png
 :text-align: center
 ```
@@ -163,12 +163,12 @@ Browse our collection of example image analysis projects done in collaboration w
 
 ```{nblinkgallery}
 :glob:
-sections/exploring_further/notebook_case_studies/notebooks/epfl_case_studies/*
+sections/epfl_case_studies/*
 ```
 
 ## 🧑‍🤝‍🧑 Join the community
 
-If you are in EPFL, you can join our *Matrix server* by connecting to [element.epfl.ch](https://element.epfl.ch/#/room/#image_analysis_hub-launchpad:epfl.ch).
+If you are in EPFL, you can join our *Matrix server* by connecting to [element.epfl.ch](https://element.epfl.ch/).
 
 ![element](./images/element.jpeg)
 

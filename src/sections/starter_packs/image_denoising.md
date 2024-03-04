@@ -46,7 +46,7 @@ Check out our tutorial notebooks related to image denoising.
 
 ```{nblinkgallery}
 :glob:
-../exploring_further/notebook_case_studies/notebooks/tutorials/denoising_*
+../notebooks/tutorials/denoising_*
 ```
 
 ## 🛠️ Software tools

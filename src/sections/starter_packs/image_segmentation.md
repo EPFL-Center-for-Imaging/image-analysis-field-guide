@@ -46,7 +46,7 @@ Check out our tutorial notebooks related to image segmentation.
 
 ```{nblinkgallery}
 :glob:
-../exploring_further/notebook_case_studies/notebooks/tutorials/segmentation_*
+../notebooks/tutorials/segmentation_*
 ```
 
 ## 🛠️ Software tools

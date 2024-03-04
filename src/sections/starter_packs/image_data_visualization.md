@@ -46,7 +46,7 @@ Check out our tutorial notebooks related to image data visualization.
 
 ```{nblinkgallery}
 :glob:
-../exploring_further/notebook_case_studies/notebooks/tutorials/visualization_*
+../notebooks/tutorials/visualization_*
 ```
 
 ## 🛠️ Software tools

@@ -15,8 +15,8 @@ execute:
   # execute_notebooks: "off"
   execute_notebooks: "auto"
   # Do not exectute the computational notebooks; only the itables
-  # exclude_patterns:
-  #   - '*.ipynb'
+  exclude_patterns:
+    - '*.ipynb'
 
 bibtex_bibfiles:
   - references.bib
@@ -41,19 +41,19 @@ sphinx:
   config:
     html_show_copyright: false
     nbsphinx_thumbnails:
-      "sections/getting_started/python_setup": "_images/epfl.jpeg"
-      "sections/exploring_further/notebook_case_studies/notebooks/tutorials/registration_3D_analysis": "_images/alert-geo.jpeg"
-      "sections/exploring_further/notebook_case_studies/notebooks/tutorials/tracking_intro": "_images/tracking_fig.jpeg"
-      "sections/exploring_further/notebook_case_studies/notebooks/tutorials/denoising_intro": "_images/denoising_lg.jpeg"
-      "sections/exploring_further/notebook_case_studies/notebooks/tutorials/image_manipulation": "_images/epfl.jpeg"
-      "sections/exploring_further/notebook_case_studies/notebooks/tutorials/registration_intro": "_images/dic_fig.jpeg"
-      "sections/exploring_further/notebook_case_studies/notebooks/tutorials/segmentation_intro": "_images/segmentation_lg.jpeg"
-      "sections/exploring_further/notebook_case_studies/notebooks/tutorials/performance_dask_image": "_images/dask_image_lg.jpeg"
-      "sections/exploring_further/notebook_case_studies/notebooks/tutorials/segmentation_stardist": "_images/stardist_fig.jpeg"
-      "sections/exploring_further/notebook_case_studies/notebooks/tutorials/visualization_napari": "_images/segmentation_fig.jpeg"
-      "sections/exploring_further/notebook_case_studies/notebooks/epfl_case_studies/crystallites_annotation": "_images/triangles_fig.jpeg"
-      "sections/exploring_further/notebook_case_studies/notebooks/epfl_case_studies/lungs_segmentation_ct": "_images/lungs_fig.jpeg"
-      "sections/exploring_further/notebook_case_studies/notebooks/epfl_case_studies/skeletonization": "_images/drosofig.jpeg"
+      "sections/python_setup": "_images/epfl.jpeg"
+      "sections/notebooks/tutorials/registration_3D_analysis": "_images/alert-geo.jpeg"
+      "sections/notebooks/tutorials/tracking_intro": "_images/tracking_fig.jpeg"
+      "sections/notebooks/tutorials/denoising_intro": "_images/denoising_lg.jpeg"
+      "sections/notebooks/tutorials/image_manipulation": "_images/epfl.jpeg"
+      "sections/notebooks/tutorials/registration_intro": "_images/dic_fig.jpeg"
+      "sections/notebooks/tutorials/segmentation_intro": "_images/segmentation_lg.jpeg"
+      "sections/notebooks/tutorials/performance_dask_image": "_images/dask_image_lg.jpeg"
+      "sections/notebooks/tutorials/segmentation_stardist": "_images/stardist_fig.jpeg"
+      "sections/notebooks/tutorials/visualization_napari": "_images/segmentation_fig.jpeg"
+      "sections/epfl_case_studies/crystallites_annotation": "_images/triangles_fig.jpeg"
+      "sections/epfl_case_studies/lungs_segmentation_ct": "_images/lungs_fig.jpeg"
+      "sections/epfl_case_studies/skeletonization": "_images/drosofig.jpeg"
 
 parse:
   myst_enable_extensions:

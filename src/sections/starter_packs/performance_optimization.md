@@ -46,7 +46,7 @@ Check out our tutorial notebooks related to performance optimization.
 
 ```{nblinkgallery}
 :glob:
-../exploring_further/notebook_case_studies/notebooks/tutorials/performance_*
+../notebooks/tutorials/performance_*
 ```
 
 ## 🛠️ Software tools

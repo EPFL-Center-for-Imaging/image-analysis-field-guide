@@ -46,7 +46,7 @@ Check out our tutorial notebooks related to image registration.
 
 ```{nblinkgallery}
 :glob:
-../exploring_further/notebook_case_studies/notebooks/tutorials/registration_*
+../notebooks/tutorials/registration_*
 ```
 
 ## 🛠️ Software tools

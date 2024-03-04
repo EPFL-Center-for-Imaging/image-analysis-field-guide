@@ -1,3 +1,0 @@
-# 🧭 Next steps
-
-Coming soon.

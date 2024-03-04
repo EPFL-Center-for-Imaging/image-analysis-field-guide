@@ -22,7 +22,7 @@ Install the packages required to build the book:
 pip install -r requirements.txt
 ```
 
-If you want to execute the notebooks, install the scientific packages listed in the `notebooks/` folder ([requirements.txt](src/sections/exploring_further/notebook_case_studies/notebooks/requirements.txt)).
+If you want to execute the notebooks, install the scientific packages listed in the `notebooks/` folder ([requirements.txt](src/sections/notebooks/requirements.txt)).
 
 ## Build the Jupyter book
 
