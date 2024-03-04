@@ -15,8 +15,8 @@ execute:
   # execute_notebooks: "off"
   execute_notebooks: "auto"
   # Do not exectute the computational notebooks; only the itables
-  exclude_patterns:
-    - '*.ipynb'
+  # exclude_patterns:
+  #   - '*.ipynb'
 
 bibtex_bibfiles:
   - references.bib
