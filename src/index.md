@@ -177,12 +177,18 @@ If you are in EPFL, you can join our *Matrix server* by connecting to [element.e
 :link: https://github.com/EPFL-Center-for-Imaging/image-analysis-field-guide/blob/main/CONTRIBUTING.md
 :img-top: https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Microscope.png
 :text-align: center
-Read our guide to find out more about the different ways you can contribute to our project.
+Read our guide to find out how you can contribute to our project.
 ```
 ```{grid-item-card} Feedback
 :link: https://forms.gle/toHAP2ydydXBCndGA
 :img-top: https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Black%20Nib.png
 :text-align: center
-Please fill-in our **survey form**. We'd love to hear your opinion about our site!
+Please fill-in our survey form. We'd love to hear your opinion about our site!
+```
+```{grid-item-card} Image.sc
+:link: https://image.sc/
+:img-top: https://global.discourse-cdn.com/business4/uploads/imagej/original/2X/4/4904e8fe196486eabdbe0d9d185e94dfcab74e10.png
+:text-align: center
+Our favourite online forum on image analysis.
 ```
 ````
