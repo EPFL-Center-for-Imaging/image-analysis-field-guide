@@ -14,7 +14,7 @@ kernelspec:
 
 # ✂️ Image segmentation
 
-Image segmentation aims to produce a segmentation mask that identifies a particular class or object. Image segmentation can be approached by classical techniques such as thresholding, weakly supervised learning, or deep learning.
+Image segmentation aims to produce a segmentation mask that identifies a particular class or object. Various techniques can be used for image segmentation, including thresholding, weakly supervised learning (Ilastik, Weka...) or deep learning.
 
 ```{code-cell} ipython3
 :tags: [remove-input]

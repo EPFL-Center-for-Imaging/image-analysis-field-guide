@@ -126,7 +126,7 @@ Performance optimization
 
 ## 📚 Collections
 
-Browse our curated lists of online resources, softwaret tools, and tutorials on the topic of scientific image analysis.
+Browse our curated lists of online resources, software tools, and tutorials on the topic of scientific image analysis.
 
 ````{grid} 1 1 2 3
 ```{grid-item-card} Learning resources
