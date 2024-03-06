@@ -129,11 +129,11 @@ def query_notion_database(database_id: str) -> dict:
 
 
 if __name__ == "__main__":
-    df_online_resources = get_online_resources_dataframe()
+    # df_online_resources = get_online_resources_dataframe()
     # print(df_online_resources.head())
     # print(len(df_online_resources))
 
-    # df_software_tools = get_software_tools_dataframe()
+    df_software_tools = get_software_tools_dataframe()
     # print(df_software_tools.head())
     # print(len(df_software_tools))
 

@@ -54,6 +54,7 @@ sphinx:
       "sections/epfl_case_studies/crystallites_annotation": "_images/triangles_fig.jpeg"
       "sections/epfl_case_studies/lungs_segmentation_ct": "_images/lungs_fig.jpeg"
       "sections/epfl_case_studies/skeletonization": "_images/drosofig.jpeg"
+      "sections/notebooks/tutorials/deblur": "_images/deblurring.jpeg"
 
 parse:
   myst_enable_extensions:

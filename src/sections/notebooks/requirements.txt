@@ -10,3 +10,4 @@ PyWavelets
 dask-image
 imagecodecs
 graphviz
+pyxu

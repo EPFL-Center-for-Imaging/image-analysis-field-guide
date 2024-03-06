@@ -17,9 +17,11 @@ def convert_png_to_jpeg(directory):
                 rgb_img = img.convert('RGB')
                 # Save the image with a .jpeg extension
                 out_path = os.path.join(directory, 'jpeg', filename[:-4] + '.jpeg')
-                # print(out_path)
-                rgb_img.save(out_path)
-                print(f"Converted '{filename}' to JPEG format.")
+                if not os.path.exists(out_path):
+                    # print(out_path)
+                    rgb_img.save(out_path)
+                    print(f"Converted '{filename}' to JPEG format.")
 
 # Replace 'your_directory_path' with the path of your folder
+print("Hi")
 convert_png_to_jpeg('./images')
