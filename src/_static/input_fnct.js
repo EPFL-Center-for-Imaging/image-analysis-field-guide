@@ -28,5 +28,15 @@ window.onload = () => {
         } else {
             console.log('No input elements found.');
         }
+        // Change the search input placeholder
+        console.log('Changing search input aria-label...');
+        var element = document.getElementById('search-input');
+        if (element) {
+            console.log('Search-input element found!');
+            element.setAttribute('aria-label', 'Search...');
+            element.setAttribute('placeholder', 'Search...');
+        } else {
+            console.log('No search-input element found.');
+        }
     }, 1000);
 };
