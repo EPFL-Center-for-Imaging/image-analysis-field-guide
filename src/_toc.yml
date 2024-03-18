@@ -10,6 +10,12 @@ chapters:
   - file: sections/starter_packs/image_data_visualization
   - file: sections/starter_packs/performance_optimization
 - file: sections/online_resources
+  sections:
+  - file: sections/online_resources_curated
+  - file: sections/online_resources_extended
 - file: sections/software_tools
+  sections:
+  - file: sections/software_tools_curated
+  - file: sections/software_tools_extended
 - file: sections/tutorials
 - file: sections/example_projects

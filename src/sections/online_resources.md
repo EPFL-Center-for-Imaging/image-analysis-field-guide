@@ -12,40 +12,7 @@ kernelspec:
 ---
 # 🎓 Learning resources
 
-Browse our curated list of free online resources on the topic of scientific image analysis.
+Browse our selection of free online resources on the topic of scientific image analysis.
 
-```{admonition} Contribute
-Do you want to add a resource to our list? Fill-in our [Google Form](https://forms.gle/FBDZjyRdwX1Mz3sR8) and we'll be happy to review your suggestion.
-```
-
-## ⭐ Favourites
-
-```{code-cell} ipython3
-:tags: [remove-input]
-
-from itables import init_notebook_mode
-init_notebook_mode(all_interactive=True, connected=True)
-
-import sys
-from pathlib import Path
-
-sys.path.append(str(Path.cwd().parents[0]))
-
-from helpers import DATAFRAME_ONLINE_RESOURCES, show_online_resources
-
-df_favourites = DATAFRAME_ONLINE_RESOURCES[DATAFRAME_ONLINE_RESOURCES['Favourite']].copy()
-df_favourites.drop(['Favourite'], axis='columns', inplace=True)
-
-show_online_resources(df_favourites, dom='lfrtip')
-```
-
-## ⬇ More resources
-
-```{code-cell} ipython3
-:tags: [remove-input]
-
-df_non_favourites = DATAFRAME_ONLINE_RESOURCES[~(DATAFRAME_ONLINE_RESOURCES['Favourite'])].copy()
-df_non_favourites.drop(['Favourite'], axis='columns', inplace=True)
-
-show_online_resources(df_non_favourites, dom='lfrtip')
+```{tableofcontents}
 ```

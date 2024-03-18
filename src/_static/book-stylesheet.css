@@ -2,11 +2,7 @@
 
 CSS that handles styling across the entire book.
   
-\*--------------------------------------------------------------------*/ 
-
-.dropdown-download-buttons {
-    display: none !important;
-}
+\*--------------------------------------------------------------------*/
 
 a {
     text-decoration: none !important;
@@ -23,10 +19,10 @@ a {
     height: 0;
     overflow: hidden;
 }
-  
+
 .video-container iframe {
     position: absolute;
-    top:0;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
@@ -34,5 +30,5 @@ a {
 
 iframe {
     margin: auto;
-    display:block;
+    display: block;
 }
