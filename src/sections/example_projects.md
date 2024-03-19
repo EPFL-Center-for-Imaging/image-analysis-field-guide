@@ -11,5 +11,5 @@ If you are in EPFL, you can launch the notebooks to run them interactively on ou
 
 ```{nblinkgallery}
 :glob:
-epfl_case_studies/*
+notebooks/epfl_case_studies/*
 ```

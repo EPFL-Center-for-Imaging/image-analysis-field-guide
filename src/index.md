@@ -163,7 +163,7 @@ Browse our collection of example image analysis projects done in collaboration w
 
 ```{nblinkgallery}
 :glob:
-sections/epfl_case_studies/*
+sections/notebooks/epfl_case_studies/*
 ```
 
 ## 🧑‍🤝‍🧑 Join the community
