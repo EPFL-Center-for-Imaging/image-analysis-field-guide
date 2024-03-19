@@ -13,9 +13,11 @@ chapters:
   sections:
   - file: sections/online_resources_curated
   - file: sections/online_resources_extended
+  - file: sections/online_resources_epfl
 - file: sections/software_tools
   sections:
   - file: sections/software_tools_curated
   - file: sections/software_tools_extended
+  - file: sections/software_tools_epfl
 - file: sections/tutorials
 - file: sections/example_projects
