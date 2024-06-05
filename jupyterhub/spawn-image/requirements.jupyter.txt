@@ -1,0 +1,27 @@
+jupytext
+jupyterlab_myst
+nbgitpuller
+jupyter-server-proxy
+jupyter-archive
+jupyterlab-rise
+jupyter-book
+itables
+sphinx-gallery
+nbsphinx
+jupyter-ai
+langchain-openai
+jupyterlab-git==0.50.0
+jupyterlab-lsp
+python-lsp-server[all]
+sidecar
+dask-labextension
+lckr_jupyterlab_variableinspector
+jupyterlab-logout
+jupyterlab-theme-toggler
+jupyterlab-unfold
+jupyterlab_image_editor
+jupyter-resource-usage
+jupyterlab-search-replace
+jupyter-videochat
+jupyter_app_launcher
+# jupyter-drawio

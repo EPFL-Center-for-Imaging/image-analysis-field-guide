@@ -1,0 +1,42 @@
+version: "3"
+
+services:
+  hub:
+    build:
+      context: .
+      dockerfile: Dockerfile.jupyterhub
+      args:
+        JUPYTERHUB_VERSION: 4.0.2
+    restart: always
+    image: jupyterhub
+    container_name: jupyterhub-field-guide
+    networks:
+      - jupyterhub-network-field-guide
+    volumes:
+      - "./jupyterhub_config.py:/srv/jupyterhub/jupyterhub_config.py:ro"
+      - "/var/run/docker.sock:/var/run/docker.sock:rw"
+      - "jupyterhub-data-field-guide:/data"
+    ports:
+      - "8001:8000"
+    environment:
+      JUPYTERHUB_ADMIN: admin
+      DOCKER_NETWORK_NAME: jupyterhub-network-field-guide
+      DOCKER_NOTEBOOK_IMAGE: "hub/jupyterhub-field-guide-spawn-image:latest"
+      DOCKER_NOTEBOOK_DIR: "/home/jovyan"
+      JUPYTERHUB_NAME: jupyterhub-field-guide
+      HOST_HOME: "/home/wittwer"
+      HOST_REPOSITORY_DIR: "/home/wittwer/code/image-analysis-field-guide/"
+    depends_on:
+      - spawn-image
+  
+  spawn-image:
+    build:
+      context: ./spawn-image
+    image: hub/jupyterhub-field-guide-spawn-image:latest
+
+volumes:
+  jupyterhub-data-field-guide:
+
+networks:
+  jupyterhub-network-field-guide:
+    name: jupyterhub-network-field-guide
