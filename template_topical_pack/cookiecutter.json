@@ -1,0 +1,9 @@
+{
+    "topical_pack_name": "Digital Pathology",
+    "topical_pack_emoji": "⚕️",
+    "topical_pack_slug": "{{ cookiecutter.topical_pack_name.lower().replace(' ', '_') }}",
+    "topical_pack_description": "Digital pathology focuses on applying computational methods to analyze whole slide images.",
+    "author_name": "Mallory Wittwer",
+    "author_email": "mallory.wittwer@epfl.ch",
+    "notion_database_tag": "Digital pathology"
+}
