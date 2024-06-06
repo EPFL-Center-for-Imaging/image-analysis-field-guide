@@ -8,7 +8,8 @@ only_build_toc_files: false
 
 launch_buttons:
   notebook_interface : jupyterlab
-  jupyterhub_url: "http://frank3:8000/"  # The URL for your JupyterHub (e.g. http://localhost:8000/)
+  jupyterhub_url: "http://localhost:8001/"
+  # jupyterhub_url: "http://frank1:8000/"  # The URL for your JupyterHub (e.g. http://localhost:8000/)
 
 execute:
   # execute_notebooks: "cache"
@@ -40,21 +41,26 @@ sphinx:
     - sphinx_gallery.load_style
   config:
     html_show_copyright: false
-    nbsphinx_thumbnails:
-      "sections/python_setup": "_images/epfl.jpeg"
-      "sections/notebooks/tutorials/registration_3D_analysis": "_images/alert-geo.jpeg"
-      "sections/notebooks/tutorials/tracking_intro": "_images/tracking_fig.jpeg"
-      "sections/notebooks/tutorials/denoising_intro": "_images/denoising_lg.jpeg"
-      "sections/notebooks/tutorials/image_manipulation": "_images/epfl.jpeg"
-      "sections/notebooks/tutorials/registration_intro": "_images/dic_fig.jpeg"
-      "sections/notebooks/tutorials/segmentation_intro": "_images/segmentation_lg.jpeg"
-      "sections/notebooks/tutorials/performance_dask_image": "_images/dask_image_lg.jpeg"
-      "sections/notebooks/tutorials/segmentation_stardist": "_images/stardist_fig.jpeg"
-      "sections/notebooks/tutorials/visualization_napari": "_images/segmentation_fig.jpeg"
-      "sections/notebooks/epfl_case_studies/crystallites_annotation": "_images/triangles_fig.jpeg"
-      "sections/notebooks/epfl_case_studies/lungs_segmentation_ct": "_images/lungs_fig.jpeg"
-      "sections/notebooks/epfl_case_studies/skeletonization": "_images/drosofig.jpeg"
-      "sections/notebooks/tutorials/deblur": "_images/deblurring.jpeg"
+    # nbsphinx_thumbnails:
+      # "sections/notebooks/tutorials/python_setup": "_images/epfl.jpeg"
+      # "sections/notebooks/tutorials/python_image_manipulation": "_images/epfl.jpeg"
+      # "sections/notebooks/tutorials/registration_intro": "_images/dic_fig.jpeg"
+      # "sections/notebooks/tutorials/registration_3D_analysis": "_images/alert-geo.jpeg"
+      # "sections/notebooks/tutorials/tracking_intro": "_images/tracking_fig.jpeg"
+      # "sections/notebooks/tutorials/tracking_solidification": "_images/epfl.jpeg"
+      # # "sections/notebooks/tutorials/denoising_intro": "_images/denoising_lg.jpeg"
+      # "sections/notebooks/tutorials/performance_dask_image": "_images/dask_image_lg.jpeg"
+      # "sections/notebooks/tutorials/performance_cucim": "_images/epfl.jpeg"
+      # "sections/notebooks/tutorials/segmentation_intro": "_images/segmentation_intro.jpeg"
+      # "sections/notebooks/tutorials/segmentation_stardist_new": "_images/stardist_plotly.jpeg"
+      # "sections/notebooks/tutorials/visualization_napari": "_images/segmentation_fig.jpeg"
+      # "sections/notebooks/tutorials/visualization_imshow": "_images/epfl.jpeg"
+      # "sections/notebooks/tutorials/reconstruction_deblur": "_images/deblurring.jpeg"
+      # "sections/notebooks/tutorials/reconstruction_pyxu": "_images/epfl.jpeg"
+      # "sections/notebooks/tutorials/fiji_intro": "_images/epfl.jpeg"
+      # "sections/notebooks/example_projects/crystallites_annotation": "_images/triangles_fig.jpeg"
+      # "sections/notebooks/example_projects/lungs_segmentation_ct": "_images/lungs_fig.jpeg"
+      # "sections/notebooks/example_projects/skeletonization": "_images/drosofig.jpeg"
 
 parse:
   myst_enable_extensions:

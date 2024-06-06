@@ -14,16 +14,16 @@ jupyter-book
 sphinx-gallery
 nbsphinx
 itables
-dask-labextension
 lckr_jupyterlab_variableinspector
 jupyterlab-logout
 jupyterlab-theme-toggler
 jupyterlab-unfold
 jupyterlab_image_editor
 jupyter-resource-usage
-jupyterlab-gitlab
-jupyterlab-github
 jupyterlab-search-replace
 jupyter-videochat
 jupyter_app_launcher
-jupyterlab-drawio
+dask-labextension
+# jupyterlab-gitlab
+# jupyterlab-github
+# jupyterlab-drawio
