@@ -46,6 +46,7 @@ RUN apt-get update -y \
     tree \
     htop \
     ripgrep \
+    zip \
     && curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg \
     && echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null \
     && apt install -y gh \
@@ -57,13 +58,7 @@ RUN apt-get update -y \
 
 # Oh-my-zsh (make it default shell)
 RUN sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-# RUN chsh -s /bin/zsh $NB_USER ## not working?
 RUN chsh -s /bin/zsh root
-
-# Copy aliases and configuration
-COPY --chown=$NB_GID:$NB_GID .bash_aliases /home/$NB_USER/.bash_aliases
-COPY --chown=$NB_GID:$NB_GID .zshrc /home/$NB_USER/.zshrc
-COPY --chown=$NB_GID:$NB_GID .aliases /home/$NB_USER/.aliases
 
 #################################################################
 # Install TigerVNC 1.9.0 -> Test 1.13.1
@@ -77,9 +72,9 @@ RUN curl -sSfL https://github.com/novnc/noVNC/archive/v${novnc_version}.tar.gz |
     chmod a+rX -R /opt/noVNC-${novnc_version}
 
 # Custom interface
-COPY --chown=root:root vnc.html /opt/noVNC-${novnc_version}
-COPY --chown=root:root ui.js /opt/noVNC-${novnc_version}/app/ui.js
-COPY --chown=root:root base.css /opt/noVNC-${novnc_version}/app/styles/base.css
+COPY --chown=root:root remote_desktop/vnc.html /opt/noVNC-${novnc_version}
+COPY --chown=root:root remote_desktop/ui.js /opt/noVNC-${novnc_version}/app/ui.js
+COPY --chown=root:root remote_desktop/base.css /opt/noVNC-${novnc_version}/app/styles/base.css
 
 RUN chmod -R a+rwx /home/$NB_USER/
 
@@ -100,6 +95,19 @@ RUN ${fiji} ${updateCommand} \
 
 # Desktop icon
 RUN printf '[Desktop Entry]\nVersion=1.0\nName=ImageJ\nGenericName=ImageJ\nX-GNOME-FullName=ImageJ\nComment=Scientific Image Analysis\nType=Application\nCategories=Education;Science;ImageProcessing;\nExec=/opt/Fiji.app/ImageJ-linux64 %F\nTryExec=/opt/Fiji.app/ImageJ-linux64\nTerminal=false\nStartupNotify=true\nMimeType=image/*;\nIcon=/opt/Fiji.app/images/icon.png\nStartupWMClass=net-imagej-launcher-ClassLauncher\n' > /home/$NB_USER/Desktop/Fiji.desktop
+
+# Install ilastik
+RUN wget https://files.ilastik.org/ilastik-1.4.0-Linux.tar.bz2 -O ilastik-1.4.0-Linux.tar.bz2 
+
+RUN tar -xf ilastik-1.4.0-Linux.tar.bz2 -C /opt/ \
+    && mv /opt/ilastik-1.4.0-Linux /opt/ilastik \
+    && rm ilastik-1.4.0-Linux.tar.bz2 \
+    && chmod -R a+rwX /opt/ilastik/
+
+RUN mkdir -p /home/$NB_USER/Desktop && chown -R $NB_GID:$NB_GID /home/$NB_USER/Desktop \
+    && printf '[Desktop Entry]\nVersion=1.4.0\nName=ilastik\nGenericName=ilastik\nX-GNOME-FullName=ilastik\nComment=Scientific Image Analysis\nType=Application\nCategories=Education;Science;ImageProcessing;\nExec=/opt/ilastik/run_ilastik.sh %F\nTryExec=/opt/ilastik/run_ilastik.sh\nTerminal=false\nStartupNotify=true\nMimeType=image/*;\nIcon=/opt/ilastik/lib/python3.7/site-packages/ilastik/shell/gui/icons/96x96/ilastik-icon.png\nStartupWMClass=ilastik\n' > /home/$NB_USER/Desktop/ilastik.desktop \
+    && chown -R $NB_GID:$NB_GID /home/$NB_USER \
+    && chmod +x /home/$NB_USER/Desktop/ilastik.desktop
 
 # Install Firefox
 RUN wget -q 'https://download.mozilla.org/?product=firefox-latest-ssl&os=linux64' -O /tmp/firefox.tar.bz2 \
@@ -141,33 +149,35 @@ RUN conda config --system --prepend envs_dirs '~/work/.conda/envs'
 # Make the conda envs discoverable in jupyter
 RUN conda install -c conda-forge nb_conda_kernels
 
+# Customize jupyter
+RUN mkdir /opt/.jupyter
+RUN chown -R $NB_GID:$NB_GID /opt/.jupyter/ \
+    && chmod -R a+rwx /opt/.jupyter/
+COPY jupyter_notebook_config.py /opt/.jupyter/jupyter_notebook_config.py
+COPY jupyter_server_config.py /opt/.jupyter/jupyter_server_config.py
+
 # Jupyter extensions
 COPY ./requirements.jupyter.txt /opt/
 RUN pip install -r /opt/requirements.jupyter.txt
-
-# Scientific python
-COPY ./requirements.txt /opt/
-RUN pip install -r /opt/requirements.txt
 
 # Jupyter hub
 ARG JUPYTERHUB_VERSION=4.0.2
 RUN pip3 install --no-cache \
     jupyterhub==$JUPYTERHUB_VERSION
 
-# Customize the jupyter server and notebook configs
-RUN mkdir /opt/.jupyter
-COPY jupyter_notebook_config.py /opt/.jupyter/jupyter_notebook_config.py
-COPY jupyter_server_config.py /opt/.jupyter/jupyter_server_config.py
+# Scientific python
+COPY ./requirements.txt /opt/
+RUN pip install -r /opt/requirements.txt
 
-# Customize extensions (is this the best way?)
+# Configuration files
+COPY --chown=$NB_GID:$NB_GID ./config/ /home/$NB_USER/
+
+# Customize extensions
 COPY lab/user-settings/@jupyter-lsp/ /opt/.jupyter/lab/user-settings/@jupyter-lsp/
 COPY lab/user-settings/@jupyterlab/completer-extension/ /opt/.jupyter/lab/user-settings/@jupyterlab/completer-extension/
 
-# App launcher (not working)
+# App launcher
 COPY jupyter_app_launcher/ /opt/conda/share/jupyter/jupyter_app_launcher/
-
-# Copy icons
-COPY --chown=root:root field_guide_icon.svg /opt/field_guide_icon.svg
 
 # Conda setup for ZSH
 RUN /opt/conda/bin/conda init zsh \
@@ -179,13 +189,12 @@ RUN /opt/conda/bin/conda init zsh \
 RUN chown -R $NB_GID:$NB_GID /home/$NB_USER/ \
     && chmod -R a+rwx /home/$NB_USER/
 
-# Also on the jupyter config folder
-RUN chown -R $NB_GID:$NB_GID /opt/.jupyter/ \
-    && chmod -R a+rwx /opt/.jupyter/
-
-# For the app launcher?
+# For the app launcher
 RUN chown -R $NB_GID:$NB_GID /opt/conda/share/jupyter/jupyter_app_launcher/ \
     && chmod -R a+rwx /opt/conda/share/jupyter/jupyter_app_launcher/
+
+RUN chown -R $NB_GID:$NB_GID /opt/.jupyter/ \
+    && chmod -R a+rwx /opt/.jupyter/
 
 #################################################################
 USER $NB_USER

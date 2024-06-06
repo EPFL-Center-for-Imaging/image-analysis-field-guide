@@ -24,8 +24,6 @@ services:
       DOCKER_NOTEBOOK_IMAGE: "hub/jupyterhub-field-guide-spawn-image:latest"
       DOCKER_NOTEBOOK_DIR: "/home/jovyan"
       JUPYTERHUB_NAME: jupyterhub-field-guide
-      HOST_HOME: "/home/wittwer"
-      HOST_REPOSITORY_DIR: "/home/wittwer/code/image-analysis-field-guide/"
     depends_on:
       - spawn-image
   

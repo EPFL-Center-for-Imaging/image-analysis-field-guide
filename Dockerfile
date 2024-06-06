@@ -22,10 +22,9 @@ RUN pip3 install -r requirements.txt
 
 COPY ./src/ ./src/
 
-RUN pip3 install -r ./src/sections/notebooks/requirements.txt
+RUN pip3 install -r ./src/sections/requirements.txt
 
 ARG NOTION_KEY
-ARG DEPLOY_URL
 
 RUN jupyter-book build ./src
 

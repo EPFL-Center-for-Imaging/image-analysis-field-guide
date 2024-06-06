@@ -1,7 +1,6 @@
 from itables import show
 from functools import partial
 from typing import List
-import os
 
 from helpers.notion_api import get_online_resources_dataframe, get_software_tools_dataframe
 
@@ -41,27 +40,9 @@ def filter_online_resources(tags: List[str]):
     return filtered_df
 
 
-def minimize(input_string: str):
-    return '-'.join(input_string.lower().split())
-
-
-def process_link(ipath):
-    # # Replace the extension
-    processed_link = ipath.replace(".ipynb", ".html")
-
-    # Split what is after /src/ - that is the relative path after the base URL
-    base, relpath = str(processed_link).split('/src/')
-
-    deploy_url = os.getenv("DEPLOY_URL", base+'/src/_build/html/')
-
-    processed_link = deploy_url + relpath
-
-    return processed_link
-
-
 def filter_software_tools(tags: List[str]):
     df = DATAFRAME_SOFTWARE_TOOLS.copy()
-    mask = df['Used for'].str.contains('|'.join(tags), na=False)
+    mask = df['Used for'].str.contains('|'.join(tags), na=False) | df['Keywords'].str.contains('|'.join(tags), na=False)
     filtered_df = df[mask].copy()
     filtered_df.drop(['Used for', 'Keywords', 'Favourite'], axis='columns', inplace=True)
 

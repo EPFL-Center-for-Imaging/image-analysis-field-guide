@@ -32,3 +32,26 @@ iframe {
     margin: auto;
     display: block;
 }
+
+.button-container {
+    text-align: center; /* Center align the inline-block button */
+    margin-top: 20px; /* Optional: adds some space at the top */
+}
+
+
+.button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #007BFF; /* Blue border */
+    background-color: #007BFF; /* Blue background */
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+.button-link:hover {
+    background-color: white;
+    color: #007BFF;
+}

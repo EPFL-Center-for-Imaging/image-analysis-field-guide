@@ -1,22 +1,22 @@
 - title: Field guide
   description: The image analysis field guide
   source: https://imaging.epfl.ch/field-guide/
-  icon: /opt/field_guide_icon.svg
+  icon: /opt/conda/share/jupyter/jupyter_app_launcher/field_guide_icon.svg
   type: url
-  catalog: Commands
+  catalog: Resources
   args:
       sandbox: [ 'allow-same-origin', 'allow-scripts', 'allow-downloads', 'allow-modals', 'allow-popups']
 
 - title: Hub Control Panel
   description: Open the Jupyter Hub Control Panel interface.
-  source: http://localhost:8001/hub/home  # Is there a way of substituting an environment variable for the port name? (Note - $PORT is not the answer)
+  source: http://localhost:8001/hub/home
   type: url
   catalog: Commands
   args:
       sandbox: [ 'allow-same-origin', 'allow-scripts', 'allow-downloads', 'allow-modals', 'allow-popups']
 
 - title: Render jupyter book
-  description: Render the field guide website locally.
+  description: Render the locally built field guide website.
   source: http://localhost:$PORT/
   type: local-server
   catalog: Commands

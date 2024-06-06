@@ -68,13 +68,13 @@ Read our **setup guide**:
 
 ````{grid} 1 1 2 3
 ```{grid-item-card} Setting up Python for scientific image analysis
-:link: ./sections/python_setup.html
+:link: ./sections/python/notebooks/python_setup.html
 :img-top: https://i0.wp.com/www.inferencelab.com/wp-content/uploads/Python-logo-notext.svg_.png
 :text-align: center
 ```
 ````
 
-## 🚀 Topical packs
+## 🚀 Explore topics
 
 ````{margin}
 ```{tip}
@@ -86,18 +86,18 @@ Delve deeper into individual topics.
 ````{grid} 1 1 2 3
 ```{grid-item-card}
 :img-top: ./images/segmentation_tm.jpeg
-:link: ./sections/starter_packs/image_segmentation.html
+:link: ./sections/image_segmentation/index.html
 :text-align: center
 Image segmentation
 ```
 ```{grid-item-card}
-:link: ./sections/starter_packs/image_registration.html
+:link: ./sections/image_registration/index.html
 :img-top: ./images/registration_tm.jpeg
 :text-align: center
 Image registration
 ```
 ```{grid-item-card}
-:link: ./sections/starter_packs/image_denoising.html
+:link: ./sections/image_denoising/index.html
 :img-top: ./images/denoising_tm.jpeg
 :text-align: center
 Image denoising
@@ -105,47 +105,24 @@ Image denoising
 ````
 ````{grid} 1 1 2 3
 ```{grid-item-card}
-:link: ./sections/starter_packs/detection_and_tracking.html
+:link: ./sections/detection_and_tracking/index.html
 :img-top: ./images/tracking_tm.jpeg
 :text-align: center
 Object detection and tracking
 ```
 ```{grid-item-card}
-:link: ./sections/starter_packs/image_data_visualization.html
+:link: ./sections/image_data_visualization/index.html
 :img-top: ./images/visualization_tm.jpeg
 :text-align: center
 Image data visualization
 ```
 ```{grid-item-card}
-:link: ./sections/starter_packs/performance_optimization.html
+:link: ./sections/performance_optimization/index.html
 :img-top: ./images/performance_tm.jpeg
 :text-align: center
 Performance optimization
 ```
 ````
-
-## 📚 Collections
-
-Browse our curated lists of online resources, software tools, and tutorials on the topic of scientific image analysis.
-
-````{grid} 1 1 2 3
-```{grid-item-card} Learning resources
-:link: ./sections/online_resources.html
-:img-top: https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Graduation%20Cap.png
-:text-align: center
-```
-```{grid-item-card} Software tools
-:link: ./sections/software_tools.html
-:img-top: https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Hammer%20and%20Wrench.png
-:text-align: center
-```
-```{grid-item-card} Tutorials
-:link: ./sections/tutorials.html
-:img-top: https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Animals/Seedling.png
-:text-align: center
-```
-````
-
 
 ## 💡 Example projects
 
@@ -160,10 +137,9 @@ If you are in EPFL, you can launch the notebooks to run them interactively on ou
 
 Browse our collection of example image analysis projects done in collaboration with EPFL labs and presented as Jupyter notebooks.
 
-
 ```{nblinkgallery}
 :glob:
-sections/notebooks/epfl_case_studies/*
+sections/epfl/notebooks/*
 ```
 
 ## 🧑‍🤝‍🧑 Join the community

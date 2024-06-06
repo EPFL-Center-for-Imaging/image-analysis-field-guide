@@ -1,23 +1,15 @@
 format: jb-book
 root: index
 chapters:
-- file: sections/starter_packs/index
-  sections:
-  - file: sections/starter_packs/image_segmentation
-  - file: sections/starter_packs/image_registration
-  - file: sections/starter_packs/image_denoising
-  - file: sections/starter_packs/detection_and_tracking
-  - file: sections/starter_packs/image_data_visualization
-  - file: sections/starter_packs/performance_optimization
-- file: sections/online_resources
-  sections:
-  - file: sections/online_resources_curated
-  - file: sections/online_resources_extended
-  - file: sections/online_resources_epfl
-- file: sections/software_tools
-  sections:
-  - file: sections/software_tools_curated
-  - file: sections/software_tools_extended
-  - file: sections/software_tools_epfl
-- file: sections/tutorials
-- file: sections/example_projects
+- file: sections/epfl/index
+- file: sections/python/index
+- file: sections/fiji/index
+- file: sections/image_segmentation/index
+- file: sections/image_registration/index
+- file: sections/detection_and_tracking/index
+- file: sections/image_denoising/index
+- file: sections/image_reconstruction/index
+- file: sections/image_data_visualization/index
+- file: sections/performance_optimization/index
+- file: sections/open_science/index
+- file: sections/deep_learning/index
