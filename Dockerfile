@@ -1,6 +1,6 @@
 FROM ubuntu:latest
-
 ENV DEBIAN_FRONTEND=noninteractive
+ARG NOTION_KEY
 
 RUN apt-get update && apt-get install -y \
     software-properties-common \
@@ -17,19 +17,17 @@ RUN rm -rf /usr/share/nginx/html/*
 WORKDIR /usr/share/nginx
 
 COPY requirements.txt ./
-
-RUN pip3 install -r requirements.txt
+RUN pip3 install -r requirements.txt \
+    && rm requirements.txt
+    
+COPY ./jupyterhub/spawn-image/requirements.txt ./
+RUN pip3 install -r requirements.txt \
+    && rm requirements.txt
 
 COPY ./src/ ./src/
-
-RUN pip3 install -r ./src/sections/requirements.txt
-
-ARG NOTION_KEY
-
 RUN jupyter-book build ./src
 
 COPY nginx.conf /etc/nginx/sites-available/nginx.conf
-
 RUN ln -s /etc/nginx/sites-available/nginx.conf /etc/nginx/sites-enabled/
 
 ENTRYPOINT [ "nginx", "-g", "daemon off;" ]
