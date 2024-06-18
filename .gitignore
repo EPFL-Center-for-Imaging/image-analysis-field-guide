@@ -176,3 +176,4 @@ convert_images.py
 
 mydask.png
 src/images/png/
+**.zarr

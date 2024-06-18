@@ -1,7 +1,6 @@
 format: jb-book
 root: index
 chapters:
-- file: sections/epfl/index
 - file: sections/python/index
 - file: sections/fiji/index
 - file: sections/image_segmentation/index
@@ -13,3 +12,4 @@ chapters:
 - file: sections/performance_optimization/index
 - file: sections/open_science/index
 - file: sections/deep_learning/index
+- file: sections/epfl/index

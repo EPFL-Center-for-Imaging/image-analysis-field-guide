@@ -159,7 +159,7 @@ Read our guide to find out how you can contribute to our project.
 :link: https://forms.gle/toHAP2ydydXBCndGA
 :img-top: https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Black%20Nib.png
 :text-align: center
-Please fill-in our survey form. We'd love to hear your opinion about our site!
+Please fill-in our feedback form. We'd love to hear your opinion about our site!
 ```
 ```{grid-item-card} Image.sc
 :link: https://image.sc/

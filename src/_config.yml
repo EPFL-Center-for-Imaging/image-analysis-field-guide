@@ -8,12 +8,12 @@ only_build_toc_files: false
 
 launch_buttons:
   notebook_interface : jupyterlab
-  jupyterhub_url: "http://localhost:8001/"
-  # jupyterhub_url: "http://frank1:8000/"  # The URL for your JupyterHub (e.g. http://localhost:8000/)
+  jupyterhub_url: "http://localhost:8000/"
+  # jupyterhub_url: "http://frank1:8000/"
 
 execute:
   # execute_notebooks: "cache"
-  # execute_notebooks: "off"
+  # execute_notebooks: "off"  
   execute_notebooks: "auto"
   # Do not exectute the computational notebooks; only the itables
   # exclude_patterns:
@@ -28,7 +28,7 @@ repository:
   path_to_book: "src"
 
 html:
-  announcement: "<img src='https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/People%20with%20professions/Construction%20Worker%20Medium%20Skin%20Tone.png' width='25' height='25' /> This site is a prototype! Please give us your feedback by filling in our <a href='https://forms.gle/toHAP2ydydXBCndGA'>survey form</a>. Thank you!"
+  announcement: "<img src='https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/People%20with%20professions/Construction%20Worker%20Medium%20Skin%20Tone.png' width='25' height='25' /> This site is a prototype! Please <a href='https://forms.gle/toHAP2ydydXBCndGA' style='color: orange;'>give us your feedback</a>. Thank you!"
   favicon: "logo.ico"
   use_issues_button: false
   use_repository_button: true
@@ -41,26 +41,21 @@ sphinx:
     - sphinx_gallery.load_style
   config:
     html_show_copyright: false
-    # nbsphinx_thumbnails:
-      # "sections/notebooks/tutorials/python_setup": "_images/epfl.jpeg"
-      # "sections/notebooks/tutorials/python_image_manipulation": "_images/epfl.jpeg"
-      # "sections/notebooks/tutorials/registration_intro": "_images/dic_fig.jpeg"
-      # "sections/notebooks/tutorials/registration_3D_analysis": "_images/alert-geo.jpeg"
-      # "sections/notebooks/tutorials/tracking_intro": "_images/tracking_fig.jpeg"
-      # "sections/notebooks/tutorials/tracking_solidification": "_images/epfl.jpeg"
-      # # "sections/notebooks/tutorials/denoising_intro": "_images/denoising_lg.jpeg"
-      # "sections/notebooks/tutorials/performance_dask_image": "_images/dask_image_lg.jpeg"
-      # "sections/notebooks/tutorials/performance_cucim": "_images/epfl.jpeg"
-      # "sections/notebooks/tutorials/segmentation_intro": "_images/segmentation_intro.jpeg"
-      # "sections/notebooks/tutorials/segmentation_stardist_new": "_images/stardist_plotly.jpeg"
-      # "sections/notebooks/tutorials/visualization_napari": "_images/segmentation_fig.jpeg"
-      # "sections/notebooks/tutorials/visualization_imshow": "_images/epfl.jpeg"
-      # "sections/notebooks/tutorials/reconstruction_deblur": "_images/deblurring.jpeg"
-      # "sections/notebooks/tutorials/reconstruction_pyxu": "_images/epfl.jpeg"
-      # "sections/notebooks/tutorials/fiji_intro": "_images/epfl.jpeg"
-      # "sections/notebooks/example_projects/crystallites_annotation": "_images/triangles_fig.jpeg"
-      # "sections/notebooks/example_projects/lungs_segmentation_ct": "_images/lungs_fig.jpeg"
-      # "sections/notebooks/example_projects/skeletonization": "_images/drosofig.jpeg"
+    nbsphinx_thumbnails:
+      ## Temporary - until we find a way to display a cell output with nbsphinx
+      "sections/python/notebooks/python_setup": "_images/epfl.jpeg"
+      "sections/python/notebooks/python_image_manipulation": "_images/epfl.jpeg"
+      "sections/image_registration/notebooks/registration_intro": "_images/epfl.jpeg"
+      "sections/detection_and_tracking/notebooks/tracking_intro": "_images/epfl.jpeg"
+      "sections/image_denoising/notebooks/denoising_intro": "_images/epfl.jpeg"
+      "sections/performance_optimization/notebooks/performance_dask_image": "_images/epfl.jpeg"
+      "sections/performance_optimization/notebooks/performance_cucim": "_images/epfl.jpeg"
+      "sections/image_segmentation/notebooks/segmentation_intro": "_images/epfl.jpeg"
+      "sections/image_segmentation/notebooks/segmentation_stardist": "_images/epfl.jpeg"
+      "sections/image_data_visualization/notebooks/visualization_napari": "_images/epfl.jpeg"
+      "sections/image_data_visualization/notebooks/visualization_zarr": "_images/epfl.jpeg"
+      "sections/image_reconstruction/notebooks/reconstruction_deblur": "_images/epfl.jpeg"
+      "sections/fiji/notebooks/fiji_intro": "_images/epfl.jpeg"
 
 parse:
   myst_enable_extensions:

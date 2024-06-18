@@ -44,7 +44,9 @@ show_online_resources(df, dom="tr")
 
 ## 💡 Example projects
 
+```{admonition} Soon!
 Check out our examples of image analysis projects done in collaboration with EPFL labs.
+```
 
 ```{nblinkgallery}
 :glob:
