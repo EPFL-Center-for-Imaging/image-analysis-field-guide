@@ -61,11 +61,11 @@ c.DockerSpawner.volumes = {
     f"{name}-user-{{username}}": notebook_dir,
 }
 
-host_shared_data_dir = os.path.join(os.path.expanduser('~'), '.cache', 'field-guide')
+# host_shared_data_dir = os.path.join(os.path.expanduser('~'), '.cache', 'field-guide')
 
-c.DockerSpawner.read_only_volumes = {
-    host_shared_data_dir: shared_data_dir,
-}
+# c.DockerSpawner.read_only_volumes = {
+#     host_shared_data_dir: shared_data_dir,
+# }
 
 # # Make this a post-start hook that depends on the group?
 # c.Spawner.post_start_cmd = "git clone https://github.com/EPFL-Center-for-Imaging/image-analysis-field-guide.git"

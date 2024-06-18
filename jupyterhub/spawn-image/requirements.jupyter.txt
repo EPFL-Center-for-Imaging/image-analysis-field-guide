@@ -3,7 +3,6 @@ jupyterlab_myst
 nbgitpuller
 jupyter-server-proxy
 jupyter-archive
-jupyterlab-rise
 jupyter-ai
 langchain-openai
 jupyterlab-git==0.50.0
@@ -24,6 +23,6 @@ jupyterlab-search-replace
 jupyter-videochat
 jupyter_app_launcher
 dask-labextension
-# jupyterlab-gitlab
+# jupyterlab-drawio  # fails (install via conda?)
+# jupyterlab-gitlab  # extension not working?
 # jupyterlab-github
-# jupyterlab-drawio

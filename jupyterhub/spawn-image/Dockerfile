@@ -169,6 +169,24 @@ RUN pip3 install --no-cache \
 COPY ./requirements.txt /opt/
 RUN pip install -r /opt/requirements.txt
 
+# Install spam
+RUN apt-get update -y \
+    && apt upgrade -y \
+    && apt-get install -yq --no-install-recommends \
+    python3-dev python3-venv python3-tk gcc g++ libeigen3-dev libicu-dev libgmp-dev libmpfr-dev libcgal-dev gmsh libfreetype6-dev libxml2-dev libxslt-dev \
+    && apt-get autoremove --purge \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/* \
+    && rm -rf /tmp/* \
+    && find /var/log -type f -exec cp /dev/null \{\} \;
+RUN pip install spam
+
+# jupyterlab-rise
+RUN pip install rise jupyterlab_rise
+
+# # jupyterlab-drawio (it breaks everyting)
+# RUN mamba install -c conda-forge jupyterlab-drawio
+
 # Configuration files
 COPY --chown=$NB_GID:$NB_GID ./config/ /home/$NB_USER/
 
@@ -193,8 +211,18 @@ RUN chown -R $NB_GID:$NB_GID /home/$NB_USER/ \
 RUN chown -R $NB_GID:$NB_GID /opt/conda/share/jupyter/jupyter_app_launcher/ \
     && chmod -R a+rwx /opt/conda/share/jupyter/jupyter_app_launcher/
 
+# Jupyter config folder (point to it as JUPYTER_CONFIG_DIR in jupyterhub_config.py)
 RUN chown -R $NB_GID:$NB_GID /opt/.jupyter/ \
     && chmod -R a+rwx /opt/.jupyter/
+
+# # Same for conda (not working)
+# RUN chown -R $NB_GID:$NB_GID /opt/conda/ \
+#     && chmod -R a+rwx /opt/conda/
+
+# Make a shared_data folder
+RUN mkdir /home/$NB_USER/shared_data \
+    && chown -R $NB_GID:$NB_GID /home/$NB_USER/shared_data \
+    && chmod -R a+rwx /home/$NB_USER/shared_data/
 
 #################################################################
 USER $NB_USER

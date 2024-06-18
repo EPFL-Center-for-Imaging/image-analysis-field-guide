@@ -17,7 +17,9 @@ services:
       - "/var/run/docker.sock:/var/run/docker.sock:rw"
       - "jupyterhub-data-field-guide:/data"
     ports:
-      - "8001:8000"
+      - "8000:8000"
+    env_file:
+      - .env  # Contains the Notion API key ($NOTION_KEY)
     environment:
       JUPYTERHUB_ADMIN: admin
       DOCKER_NETWORK_NAME: jupyterhub-network-field-guide

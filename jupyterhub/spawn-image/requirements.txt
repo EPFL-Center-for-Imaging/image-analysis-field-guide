@@ -4,14 +4,19 @@ napari-skimage-regionprops
 matplotlib
 skan
 trackpy
-spam
+seaborn
+seaborn-image
 PyWavelets
 dask-image
 imagecodecs
 graphviz
+pyxu
+jupyter-bokeh
+kaleido
 cookiecutter
 plotly
-seaborn
-seaborn-image
 opencv-python
 stackview
+zarr
+ome-zarr
+# panel  # Incompatible with RISE

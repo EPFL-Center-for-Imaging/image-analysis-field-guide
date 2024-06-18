@@ -9,7 +9,7 @@
 
 - title: Hub Control Panel
   description: Open the Jupyter Hub Control Panel interface.
-  source: http://localhost:8001/hub/home
+  source: http://localhost:8000/hub/home
   type: url
   catalog: Commands
   args:
